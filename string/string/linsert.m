@@ -7,7 +7,17 @@
 //
 
 #import "linsert.h"
+#import <Foundation/Foundation.h>
 
 @implementation linsert
 
+-(void)click
+{
+    NSLog(@"%@->调用了click",self);
+}
+
+-(void)click1:(NSString*)a
+{
+    NSLog(@"%@->调用了click1 = %@",self,a);
+}
 @end

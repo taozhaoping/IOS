@@ -10,4 +10,16 @@
 
 @implementation button
 
+
+
+-(void)click
+{
+    _block(self);
+}
+
+-(void)click2
+{
+    printf("click\n");
+}
+
 @end

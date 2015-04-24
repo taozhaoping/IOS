@@ -14,6 +14,7 @@
 		6786988A1AE878D40088C78F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678698881AE878D40088C78F /* Main.storyboard */; };
 		6786988C1AE878D40088C78F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6786988B1AE878D40088C78F /* Images.xcassets */; };
 		678698981AE878D40088C78F /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 678698971AE878D40088C78F /* ______Tests.m */; };
+		678698A71AE87A2F0088C78F /* AjaxService.m in Sources */ = {isa = PBXBuildFile; fileRef = 678698A61AE87A2F0088C78F /* AjaxService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		678698911AE878D40088C78F /* 大华移动办公Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "大华移动办公Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		678698961AE878D40088C78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678698971AE878D40088C78F /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		678698A51AE87A2F0088C78F /* AjaxService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AjaxService.h; sourceTree = "<group>"; };
+		678698A61AE87A2F0088C78F /* AjaxService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AjaxService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,9 @@
 		6786987A1AE878D40088C78F /* 大华移动办公 */ = {
 			isa = PBXGroup;
 			children = (
-				6786987F1AE878D40088C78F /* AppDelegate.h */,
-				678698801AE878D40088C78F /* AppDelegate.m */,
-				678698851AE878D40088C78F /* ViewController.h */,
-				678698861AE878D40088C78F /* ViewController.m */,
-				678698881AE878D40088C78F /* Main.storyboard */,
+				678698A31AE879A10088C78F /* view */,
+				678698A21AE879920088C78F /* controller */,
+				678698A11AE879860088C78F /* model */,
 				6786988B1AE878D40088C78F /* Images.xcassets */,
 				678698821AE878D40088C78F /* ______.xcdatamodeld */,
 				6786987B1AE878D40088C78F /* Supporting Files */,
@@ -96,6 +97,8 @@
 		6786987B1AE878D40088C78F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6786987F1AE878D40088C78F /* AppDelegate.h */,
+				678698801AE878D40088C78F /* AppDelegate.m */,
 				6786987C1AE878D40088C78F /* Info.plist */,
 				6786987D1AE878D40088C78F /* main.m */,
 			);
@@ -117,6 +120,41 @@
 				678698961AE878D40088C78F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		678698A11AE879860088C78F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				678698A51AE87A2F0088C78F /* AjaxService.h */,
+				678698A61AE87A2F0088C78F /* AjaxService.m */,
+			);
+			name = model;
+			path = "/Users/yoon/Documents/IOS/大华移动办公/大华移动办公/model";
+			sourceTree = "<absolute>";
+		};
+		678698A21AE879920088C78F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				678698851AE878D40088C78F /* ViewController.h */,
+				678698A41AE879B50088C78F /* impl */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		678698A31AE879A10088C78F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				678698881AE878D40088C78F /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		678698A41AE879B50088C78F /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				678698861AE878D40088C78F /* ViewController.m */,
+			);
+			name = impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +260,7 @@
 				678698811AE878D40088C78F /* AppDelegate.m in Sources */,
 				678698871AE878D40088C78F /* ViewController.m in Sources */,
 				6786987E1AE878D40088C78F /* main.m in Sources */,
+				678698A71AE87A2F0088C78F /* AjaxService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +376,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "大华移动办公/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -348,8 +389,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "大华移动办公/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

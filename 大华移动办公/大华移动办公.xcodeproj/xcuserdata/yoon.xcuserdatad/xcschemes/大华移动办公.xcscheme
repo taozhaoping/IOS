@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "678698C71AE8BC5B0088C78F"
-               BuildableName = "string"
-               BlueprintName = "string"
-               ReferencedContainer = "container:string.xcodeproj">
+               BlueprintIdentifier = "678698771AE878D40088C78F"
+               BuildableName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.app"
+               BlueprintName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;"
+               ReferencedContainer = "container:&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "678698901AE878D40088C78F"
+               BuildableName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;Tests.xctest"
+               BlueprintName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;Tests"
+               ReferencedContainer = "container:&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "678698C71AE8BC5B0088C78F"
-            BuildableName = "string"
-            BlueprintName = "string"
-            ReferencedContainer = "container:string.xcodeproj">
+            BlueprintIdentifier = "678698771AE878D40088C78F"
+            BuildableName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.app"
+            BlueprintName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;"
+            ReferencedContainer = "container:&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "678698C71AE8BC5B0088C78F"
-            BuildableName = "string"
-            BlueprintName = "string"
-            ReferencedContainer = "container:string.xcodeproj">
+            BlueprintIdentifier = "678698771AE878D40088C78F"
+            BuildableName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.app"
+            BlueprintName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;"
+            ReferencedContainer = "container:&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "678698C71AE8BC5B0088C78F"
-            BuildableName = "string"
-            BlueprintName = "string"
-            ReferencedContainer = "container:string.xcodeproj">
+            BlueprintIdentifier = "678698771AE878D40088C78F"
+            BuildableName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.app"
+            BlueprintName = "&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;"
+            ReferencedContainer = "container:&#x5927;&#x534e;&#x79fb;&#x52a8;&#x529e;&#x516c;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

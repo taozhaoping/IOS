@@ -10,4 +10,7 @@
 
 @interface linsert : NSObject
 
+-(void)click;
+
+-(void)click1 :(NSString *)a;
 @end
