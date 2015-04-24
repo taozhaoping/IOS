@@ -130,6 +130,7 @@ void StringExport()
     [aObject makeObjectsPerformSelector:@selector(click)];
     
     //调用前需要先判断对象是否包含了需要调用的方法
+    BOOL bo = [aObject respondsToSelector:@selector(click1:)];
     [aObject makeObjectsPerformSelector:@selector(click1:) withObject:@"123"];
     
     [aObject enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {

@@ -7,7 +7,7 @@
 //
 
 #import "Deck.h"
-
+#import "PlayingCard.h"
 @interface Deck ()
 @property (nonatomic,strong) NSMutableArray * cradArray;
 @end
@@ -52,7 +52,11 @@
     {
         NSUInteger count = arc4random() % [crads count];
         crad = crads[count];
-        [crads removeObjectAtIndex:count];
+        if([crad isKindOfClass:[PlayingCard class]])
+        //if ([PlayingCard class] == [crad class])
+        {
+            [crads removeObjectAtIndex:count];
+        }
     }
     return crad;
 }
