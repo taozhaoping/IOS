@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		676E7BEB1AE7204A00F6E77B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E7BEA1AE7204A00F6E77B /* main.m */; };
+		676E7BEE1AE7204A00F6E77B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E7BED1AE7204A00F6E77B /* AppDelegate.m */; };
+		676E7BF11AE7204A00F6E77B /* ____.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 676E7BEF1AE7204A00F6E77B /* ____.xcdatamodeld */; };
+		676E7BF41AE7204A00F6E77B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E7BF31AE7204A00F6E77B /* ViewController.m */; };
+		676E7BF91AE7204A00F6E77B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676E7BF81AE7204A00F6E77B /* Images.xcassets */; };
+		676E7C051AE7204A00F6E77B /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E7C041AE7204A00F6E77B /* ____Tests.m */; };
+		676E7C171AE728C900F6E77B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676E7C161AE728C900F6E77B /* Foundation.framework */; };
+		677C8E991AE7459C008B6C19 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 677C8E981AE7459C008B6C19 /* PlayingCard.m */; };
+		677C8E9E1AE76489008B6C19 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 677C8E9D1AE76489008B6C19 /* PlayingCardDeck.m */; };
+		67B96F471AE72A1A00BAB6A0 /* Crad.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B96F461AE72A1A00BAB6A0 /* Crad.m */; };
+		67B96F4A1AE72F5700BAB6A0 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B96F491AE72F5700BAB6A0 /* Deck.m */; };
+		67B96F4C1AE73EED00BAB6A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676E7BF51AE7204A00F6E77B /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		673B19C11AE79F46007D179F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676E7BDD1AE7204A00F6E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676E7BE41AE7204A00F6E77B;
+			remoteInfo = "纸牌游戏";
+		};
+		676E7BFF1AE7204A00F6E77B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676E7BDD1AE7204A00F6E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676E7BE41AE7204A00F6E77B;
+			remoteInfo = "纸牌游戏";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		676E7BE51AE7204A00F6E77B /* 纸牌游戏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "纸牌游戏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		676E7BE91AE7204A00F6E77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676E7BEA1AE7204A00F6E77B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		676E7BEC1AE7204A00F6E77B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		676E7BED1AE7204A00F6E77B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		676E7BF01AE7204A00F6E77B /* ____.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "____.xcdatamodel"; sourceTree = "<group>"; };
+		676E7BF21AE7204A00F6E77B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		676E7BF31AE7204A00F6E77B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		676E7BF61AE7204A00F6E77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		676E7BF81AE7204A00F6E77B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		676E7BFE1AE7204A00F6E77B /* 纸牌游戏Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "纸牌游戏Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		676E7C031AE7204A00F6E77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676E7C041AE7204A00F6E77B /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		676E7C161AE728C900F6E77B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		677C8E971AE7459C008B6C19 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = model/PlayingCard.h; sourceTree = "<group>"; };
+		677C8E981AE7459C008B6C19 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = model/PlayingCard.m; sourceTree = "<group>"; };
+		677C8E9C1AE76489008B6C19 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = model/PlayingCardDeck.h; sourceTree = "<group>"; };
+		677C8E9D1AE76489008B6C19 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		67B96F451AE72A1A00BAB6A0 /* Crad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crad.h; path = model/Crad.h; sourceTree = "<group>"; };
+		67B96F461AE72A1A00BAB6A0 /* Crad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crad.m; path = model/Crad.m; sourceTree = "<group>"; };
+		67B96F481AE72F5700BAB6A0 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = model/Deck.h; sourceTree = "<group>"; };
+		67B96F491AE72F5700BAB6A0 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = model/Deck.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		676E7BE21AE7204A00F6E77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676E7C171AE728C900F6E77B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676E7BFB1AE7204A00F6E77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		676E7BDC1AE7204A00F6E77B = {
+			isa = PBXGroup;
+			children = (
+				676E7C161AE728C900F6E77B /* Foundation.framework */,
+				676E7BE71AE7204A00F6E77B /* 纸牌游戏 */,
+				676E7C011AE7204A00F6E77B /* 纸牌游戏Tests */,
+				676E7BE61AE7204A00F6E77B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		676E7BE61AE7204A00F6E77B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				676E7BE51AE7204A00F6E77B /* 纸牌游戏.app */,
+				676E7BFE1AE7204A00F6E77B /* 纸牌游戏Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		676E7BE71AE7204A00F6E77B /* 纸牌游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				676E7C0E1AE7278200F6E77B /* model */,
+				676E7BEC1AE7204A00F6E77B /* AppDelegate.h */,
+				676E7BED1AE7204A00F6E77B /* AppDelegate.m */,
+				676E7BF21AE7204A00F6E77B /* ViewController.h */,
+				676E7BF31AE7204A00F6E77B /* ViewController.m */,
+				676E7BF51AE7204A00F6E77B /* Main.storyboard */,
+				676E7BF81AE7204A00F6E77B /* Images.xcassets */,
+				676E7BEF1AE7204A00F6E77B /* ____.xcdatamodeld */,
+				676E7BE81AE7204A00F6E77B /* Supporting Files */,
+			);
+			path = "纸牌游戏";
+			sourceTree = "<group>";
+		};
+		676E7BE81AE7204A00F6E77B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				676E7BE91AE7204A00F6E77B /* Info.plist */,
+				676E7BEA1AE7204A00F6E77B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		676E7C011AE7204A00F6E77B /* 纸牌游戏Tests */ = {
+			isa = PBXGroup;
+			children = (
+				676E7C041AE7204A00F6E77B /* ____Tests.m */,
+				676E7C021AE7204A00F6E77B /* Supporting Files */,
+			);
+			path = "纸牌游戏Tests";
+			sourceTree = "<group>";
+		};
+		676E7C021AE7204A00F6E77B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				676E7C031AE7204A00F6E77B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		676E7C0E1AE7278200F6E77B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				67B96F451AE72A1A00BAB6A0 /* Crad.h */,
+				67B96F461AE72A1A00BAB6A0 /* Crad.m */,
+				67B96F481AE72F5700BAB6A0 /* Deck.h */,
+				67B96F491AE72F5700BAB6A0 /* Deck.m */,
+				677C8E971AE7459C008B6C19 /* PlayingCard.h */,
+				677C8E981AE7459C008B6C19 /* PlayingCard.m */,
+				677C8E9C1AE76489008B6C19 /* PlayingCardDeck.h */,
+				677C8E9D1AE76489008B6C19 /* PlayingCardDeck.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		676E7BE41AE7204A00F6E77B /* 纸牌游戏 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676E7C081AE7204A00F6E77B /* Build configuration list for PBXNativeTarget "纸牌游戏" */;
+			buildPhases = (
+				676E7BE11AE7204A00F6E77B /* Sources */,
+				676E7BE21AE7204A00F6E77B /* Frameworks */,
+				676E7BE31AE7204A00F6E77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "纸牌游戏";
+			productName = "纸牌游戏";
+			productReference = 676E7BE51AE7204A00F6E77B /* 纸牌游戏.app */;
+			productType = "com.apple.product-type.application";
+		};
+		676E7BFD1AE7204A00F6E77B /* 纸牌游戏Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676E7C0B1AE7204A00F6E77B /* Build configuration list for PBXNativeTarget "纸牌游戏Tests" */;
+			buildPhases = (
+				676E7BFA1AE7204A00F6E77B /* Sources */,
+				676E7BFB1AE7204A00F6E77B /* Frameworks */,
+				676E7BFC1AE7204A00F6E77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				676E7C001AE7204A00F6E77B /* PBXTargetDependency */,
+				673B19C21AE79F46007D179F /* PBXTargetDependency */,
+			);
+			name = "纸牌游戏Tests";
+			productName = "纸牌游戏Tests";
+			productReference = 676E7BFE1AE7204A00F6E77B /* 纸牌游戏Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		676E7BDD1AE7204A00F6E77B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "陶照平";
+				TargetAttributes = {
+					676E7BE41AE7204A00F6E77B = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					676E7BFD1AE7204A00F6E77B = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 676E7BE41AE7204A00F6E77B;
+					};
+				};
+			};
+			buildConfigurationList = 676E7BE01AE7204A00F6E77B /* Build configuration list for PBXProject "纸牌游戏" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 676E7BDC1AE7204A00F6E77B;
+			productRefGroup = 676E7BE61AE7204A00F6E77B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				676E7BE41AE7204A00F6E77B /* 纸牌游戏 */,
+				676E7BFD1AE7204A00F6E77B /* 纸牌游戏Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		676E7BE31AE7204A00F6E77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B96F4C1AE73EED00BAB6A0 /* Main.storyboard in Resources */,
+				676E7BF91AE7204A00F6E77B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676E7BFC1AE7204A00F6E77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		676E7BE11AE7204A00F6E77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B96F471AE72A1A00BAB6A0 /* Crad.m in Sources */,
+				677C8E9E1AE76489008B6C19 /* PlayingCardDeck.m in Sources */,
+				676E7BEE1AE7204A00F6E77B /* AppDelegate.m in Sources */,
+				677C8E991AE7459C008B6C19 /* PlayingCard.m in Sources */,
+				676E7BF11AE7204A00F6E77B /* ____.xcdatamodeld in Sources */,
+				676E7BF41AE7204A00F6E77B /* ViewController.m in Sources */,
+				67B96F4A1AE72F5700BAB6A0 /* Deck.m in Sources */,
+				676E7BEB1AE7204A00F6E77B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676E7BFA1AE7204A00F6E77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676E7C051AE7204A00F6E77B /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		673B19C21AE79F46007D179F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 676E7BE41AE7204A00F6E77B /* 纸牌游戏 */;
+			targetProxy = 673B19C11AE79F46007D179F /* PBXContainerItemProxy */;
+		};
+		676E7C001AE7204A00F6E77B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 676E7BE41AE7204A00F6E77B /* 纸牌游戏 */;
+			targetProxy = 676E7BFF1AE7204A00F6E77B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		676E7BF51AE7204A00F6E77B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				676E7BF61AE7204A00F6E77B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		676E7C061AE7204A00F6E77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		676E7C071AE7204A00F6E77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		676E7C091AE7204A00F6E77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "纸牌游戏/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		676E7C0A1AE7204A00F6E77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "纸牌游戏/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		676E7C0C1AE7204A00F6E77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/纸牌游戏.app/纸牌游戏";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "纸牌游戏Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		676E7C0D1AE7204A00F6E77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/纸牌游戏.app/纸牌游戏";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "纸牌游戏Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		676E7BE01AE7204A00F6E77B /* Build configuration list for PBXProject "纸牌游戏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676E7C061AE7204A00F6E77B /* Debug */,
+				676E7C071AE7204A00F6E77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676E7C081AE7204A00F6E77B /* Build configuration list for PBXNativeTarget "纸牌游戏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676E7C091AE7204A00F6E77B /* Debug */,
+				676E7C0A1AE7204A00F6E77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676E7C0B1AE7204A00F6E77B /* Build configuration list for PBXNativeTarget "纸牌游戏Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676E7C0C1AE7204A00F6E77B /* Debug */,
+				676E7C0D1AE7204A00F6E77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		676E7BEF1AE7204A00F6E77B /* ____.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				676E7BF01AE7204A00F6E77B /* ____.xcdatamodel */,
+			);
+			currentVersion = 676E7BF01AE7204A00F6E77B /* ____.xcdatamodel */;
+			path = "____.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 676E7BDD1AE7204A00F6E77B /* Project object */;
+}
