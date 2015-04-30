@@ -137,17 +137,6 @@
                                     <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BKa-AE-9GK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT3-0l-TyU">
-                                <rect key="frame" x="233" y="220" width="61" height="92"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <state key="normal" backgroundImage="60-90">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SK4-QM-o7J"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNW-Oh-Qyr">
                                 <rect key="frame" x="26" y="320" width="61" height="92"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -200,6 +189,17 @@
                                 </state>
                                 <connections>
                                     <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7UX-qV-rJ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT3-0l-TyU">
+                                <rect key="frame" x="233" y="220" width="61" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" backgroundImage="60-90">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SK4-QM-o7J"/>
                                 </connections>
                             </button>
                         </subviews>

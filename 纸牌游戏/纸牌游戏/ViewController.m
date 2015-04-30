@@ -94,14 +94,11 @@
                 forState:UIControlStateNormal];
            
             if (_button && [_button.currentTitle isEqualToString:crad.contents] ) {
-                [ViewController flop:sender];
+                
                 [ViewController flop:_button];
-                [_button setEnabled:true];
             }else{
-                [_button setEnabled:true];
                 [ViewController flop:_button];
                 _button = sender;
-                [_button setEnabled:false];
             }
         
         

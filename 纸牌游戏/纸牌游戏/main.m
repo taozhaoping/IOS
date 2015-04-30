@@ -11,15 +11,6 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        NSString* str1 = [NSString stringWithFormat:@"123456789"];
-        
-        NSRange range = [str1 rangeOfString:@"23"];
-        NSLog(@"%zi\n",range.length);
-        
-        NSString* str2 = [NSString stringWithFormat:@"1"];
-        bool isContain = [str1 containsString:str2];
-        
-        NSLog(@"%i\n",isContain);
 
         //return 0;
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));

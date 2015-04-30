@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A370501AF083B20022AB61 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A3704F1AF083B20022AB61 /* Default-568h@2x.png */; };
 		9D6061561AEC6F0900950A15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6061551AEC6F0900950A15 /* main.m */; };
 		9D6061591AEC6F0900950A15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6061581AEC6F0900950A15 /* AppDelegate.m */; };
 		9D60615C1AEC6F0900950A15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D60615B1AEC6F0900950A15 /* ViewController.m */; };
@@ -17,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		67A3704D1AF082D20022AB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D6061481AEC6F0800950A15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D60614F1AEC6F0800950A15;
+			remoteInfo = "页面属性设置";
+		};
 		9D60616A1AEC6F0900950A15 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D6061481AEC6F0800950A15 /* Project object */;
@@ -27,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67A3704F1AF083B20022AB61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D6061501AEC6F0900950A15 /* 页面属性设置.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "页面属性设置.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6061541AEC6F0900950A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6061551AEC6F0900950A15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +72,7 @@
 		9D6061471AEC6F0800950A15 = {
 			isa = PBXGroup;
 			children = (
+				67A3704F1AF083B20022AB61 /* Default-568h@2x.png */,
 				9D6061521AEC6F0900950A15 /* 页面属性设置 */,
 				9D60616C1AEC6F0900950A15 /* 页面属性设置Tests */,
 				9D6061511AEC6F0900950A15 /* Products */,
@@ -151,6 +161,7 @@
 			);
 			dependencies = (
 				9D60616B1AEC6F0900950A15 /* PBXTargetDependency */,
+				67A3704E1AF082D20022AB61 /* PBXTargetDependency */,
 			);
 			name = "页面属性设置Tests";
 			productName = "页面属性设置Tests";
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D60615F1AEC6F0900950A15 /* Main.storyboard in Resources */,
+				67A370501AF083B20022AB61 /* Default-568h@2x.png in Resources */,
 				9D6061641AEC6F0900950A15 /* LaunchScreen.xib in Resources */,
 				9D6061611AEC6F0900950A15 /* Images.xcassets in Resources */,
 			);
@@ -236,6 +248,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		67A3704E1AF082D20022AB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D60614F1AEC6F0800950A15 /* 页面属性设置 */;
+			targetProxy = 67A3704D1AF082D20022AB61 /* PBXContainerItemProxy */;
+		};
 		9D60616B1AEC6F0900950A15 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D60614F1AEC6F0800950A15 /* 页面属性设置 */;
@@ -348,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "页面属性设置/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -360,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "页面属性设置/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -370,7 +387,7 @@
 		9D6061771AEC6F0900950A15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/页面属性设置.app/页面属性设置";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -380,24 +397,26 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "页面属性设置Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/页面属性设置.app/页面属性设置";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
 		9D6061781AEC6F0900950A15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/页面属性设置.app/页面属性设置";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "页面属性设置Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/页面属性设置.app/页面属性设置";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
@@ -420,6 +439,7 @@
 				9D6061751AEC6F0900950A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D6061761AEC6F0900950A15 /* Build configuration list for PBXNativeTarget "页面属性设置Tests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +448,7 @@
 				9D6061781AEC6F0900950A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

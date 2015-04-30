@@ -29,6 +29,14 @@
     [self.lineBody.textStorage addAttributes:dic range:self.lineBody.selectedRange];
     
 }
+- (IBAction)UnUpdateUI {
+    [self noUpdateUI];
+}
+
+-(void) noUpdateUI
+{
+    [self.lineBody.textStorage removeAttribute:NSStrokeWidthAttributeName range:self.lineBody.selectedRange];
+}
 
 - (IBAction)changebodyselectincolormatchBackgroundofButton:(UIButton *)sender {
     NSRange range = [self.lineBody selectedRange];
