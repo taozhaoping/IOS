@@ -56,4 +56,22 @@
     return [self.suit stringByAppendingFormat:@"%@",[PlayingCard rankStrings][self.rank]];
 }
 
+-(int)match:(NSArray *)otherCards
+{
+    int source = 0;
+    
+    if ([otherCards count] ==1)
+    {
+        PlayingCard* playingCard = [otherCards firstObject];
+        if(self.rank == playingCard.rank)
+        {
+            source = 4;
+        }else if ([self.suit	isEqualToString:playingCard.suit])
+        {
+            source = 1;
+        }
+    }
+    return source;
+}
+
 @end

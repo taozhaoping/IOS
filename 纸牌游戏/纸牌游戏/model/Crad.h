@@ -15,10 +15,10 @@
 @property (nonatomic,retain) NSString* contents;
 
 #pragma mark 是否选中
-@property (nonatomic,assign,getter=isChosen) BOOL* chosen;
+@property (nonatomic,assign,getter=isChosen) BOOL chosen;
 
 #pragma mark 是否匹配
-@property (nonatomic,assign,getter=isMatched) BOOL* matched;
+@property (nonatomic,assign,getter=isMatched) BOOL matched;
 
 #pragma mark - 公共方法
 #pragma mark 是否匹配

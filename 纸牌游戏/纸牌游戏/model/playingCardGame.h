@@ -9,7 +9,7 @@
 #import "PlayingCard.h"
 #import "Deck.h"
 
-@interface playingCardGame : PlayingCard
+@interface PlayingCardGame : PlayingCard
 
 @property (nonatomic,readonly) NSInteger sorce;
 

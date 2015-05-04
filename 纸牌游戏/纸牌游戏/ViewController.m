@@ -9,19 +9,25 @@
 #import "ViewController.h"
 #import "Crad.h"
 #import "PlayingCard.h"
+#import "PlayingCardGame.h"
 #import "PlayingCardDeck.h"
 
 @interface ViewController ()
 
+@property (nonatomic,strong) UIButton* button;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cradButtonArry;
+
+@property (nonatomic,strong) PlayingCardGame* game;
+
 @property (nonatomic,strong) PlayingCardDeck* cardDeck;
 
-@property (nonatomic,strong) UIButton* button;
+@property (weak, nonatomic) IBOutlet UILabel *sourceLable;
 
 @end
 
 @implementation ViewController
 
-@synthesize cardDeck = _cardDeck;
 
 
 //viewDidLoad－加载视图
@@ -63,7 +69,16 @@
     NSLog(@"对象的视图已经消失、被覆盖或是隐藏时调用");
 }
 
--(PlayingCardDeck *)cardDeck
+-(PlayingCardGame*)game
+{
+    if(!_game)
+    {
+        _game = [[PlayingCardGame alloc] initWithPlayingCard:[self.cradButtonArry count] Deck:[self cardDeck]];
+    }
+    return _game;
+}
+
+-(Deck *)cardDeck
 {
     if (!_cardDeck) {
         _cardDeck = [[PlayingCardDeck alloc] init];
@@ -71,52 +86,67 @@
     return _cardDeck;
 }
 
-+(void)flop : (UIButton *) sender
+
+-(NSString *) titleForCrad :(Crad *) card
 {
-    UIImage *ui= [UIImage imageNamed:@"60-90"];
-    [sender setBackgroundImage:ui forState:UIControlStateNormal];
-    [sender setTitle: @""
-            forState:UIControlStateNormal];
+    return card.isChosen ? card.contents :@"";
+}
+
+-(UIImage *) backgroundForCard : (Crad *) card
+{
+    return [UIImage imageNamed:card.isChosen ? @"image" : @"60-90" ];
 }
 
 - (IBAction)touchCradButton:(UIButton *)sender {
-    if([sender.currentTitle length])
-    {
-        [ViewController flop:sender];
-    }else{
-       Crad* crad = [self.cardDeck drawRandomCard];
-        if (crad) {
-            
-        UIImage* ui= [UIImage imageNamed:@"image"];
-        NSLog(@"%@",crad.contents);
-        [sender setBackgroundImage:ui forState:UIControlStateNormal];
-        [sender setTitle: crad.contents
-                forState:UIControlStateNormal];
-           
-            if (_button && [_button.currentTitle isEqualToString:crad.contents] ) {
-                
-                [ViewController flop:_button];
-            }else{
-                [ViewController flop:_button];
-                _button = sender;
-            }
-        
-        
-        }else
-        {
-            [sender setHidden:true];
-        }
+    NSUInteger touchCrad = [self.cradButtonArry indexOfObject:sender];
+    [self.game chooseCardIndex:touchCrad];
+    [self updateUI];
+    self.sourceLable.text = [NSString stringWithFormat:@"分数:%ld",(long)self.game.sorce];
+//    if([sender.currentTitle length])
+//    {
+//        [ViewController flop:sender];
+//    }else{
+//       Crad* crad = [self.cardDeck drawRandomCard];
+//        if (crad) {
+//            
+//        UIImage* ui= [UIImage imageNamed:@"image"];
+//        NSLog(@"%@",crad.contents);
+//        [sender setBackgroundImage:ui forState:UIControlStateNormal];
+//        [sender setTitle: crad.contents
+//                forState:UIControlStateNormal];
+//           
+//            if (_button && [_button.currentTitle isEqualToString:crad.contents] ) {
+//                
+//                [ViewController flop:_button];
+//            }else{
+//                [ViewController flop:_button];
+//                _button = sender;
+//            }
+//        
+//        
+//        }else
+//        {
+//            [sender setHidden:true];
+//        }
+//    }
+}
+
+-(void) updateUI
+{
+    for (UIButton* otherButton in self.cradButtonArry) {
+        NSUInteger index = [self.cradButtonArry indexOfObject:otherButton];
+        Crad * card = [self.game CardAtIndex:index];
+        [otherButton setBackgroundImage:[self backgroundForCard:card] forState:UIControlStateNormal];
+        [otherButton setTitle:[self titleForCrad:card] forState:UIControlStateNormal];
+        otherButton.enabled = !card.isMatched;
     }
 }
 
 //重新开始游戏
 - (IBAction)clearGame:(UIButton *)sender {
+    _game = nil;
     _cardDeck = nil;
-    UIImage *ui= [UIImage imageNamed:@"60-90"];
-    [_button setBackgroundImage:ui forState:UIControlStateNormal];
-    [_button setTitle: @""
-            forState:UIControlStateNormal];
-    [_button setEnabled:true];
-
+    [self updateUI];
+    self.sourceLable.text = [NSString stringWithFormat:@"分数:%ld",(long)self.game.sorce];
 }
 @end

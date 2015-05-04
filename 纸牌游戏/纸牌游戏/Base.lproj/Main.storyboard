@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -145,7 +146,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CNA-Td-mLl"/>
+                                    <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bX7-Bw-Yx8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vf-li-6m1">
@@ -157,17 +158,6 @@
                                 </state>
                                 <connections>
                                     <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fu0-yb-kSl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTk-i6-PzT">
-                                <rect key="frame" x="233" y="320" width="61" height="92"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <state key="normal" backgroundImage="60-90">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iuh-uz-q5x"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D7-5p-s1D">
@@ -202,9 +192,45 @@
                                     <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SK4-QM-o7J"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分数:0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUD-Zw-meZ">
+                                <rect key="frame" x="16" y="444" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTk-i6-PzT">
+                                <rect key="frame" x="233" y="320" width="61" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" backgroundImage="60-90">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCradButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iuh-uz-q5x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="sourceLable" destination="KUD-Zw-meZ" id="NV0-FL-yED"/>
+                        <outletCollection property="cradButtonArry" destination="Jvc-hO-ObL" id="5y6-mv-j5i"/>
+                        <outletCollection property="cradButtonArry" destination="enh-HJ-xpe" id="wZa-si-BG2"/>
+                        <outletCollection property="cradButtonArry" destination="Ub0-aI-eT5" id="TCm-nU-REX"/>
+                        <outletCollection property="cradButtonArry" destination="Wfl-An-6aJ" id="Jep-N3-XNq"/>
+                        <outletCollection property="cradButtonArry" destination="rhT-3Q-Jmd" id="qsb-1H-w5k"/>
+                        <outletCollection property="cradButtonArry" destination="6IC-Ma-hPE" id="5Pk-ik-paa"/>
+                        <outletCollection property="cradButtonArry" destination="0EI-ME-mt7" id="a4R-4f-zC4"/>
+                        <outletCollection property="cradButtonArry" destination="poP-hi-gMf" id="feT-oU-WeE"/>
+                        <outletCollection property="cradButtonArry" destination="WcM-6a-2dH" id="OIZ-Wo-xMu"/>
+                        <outletCollection property="cradButtonArry" destination="CqL-hm-xJy" id="K3Y-Hp-1h4"/>
+                        <outletCollection property="cradButtonArry" destination="mUl-fG-pts" id="bed-rS-N1b"/>
+                        <outletCollection property="cradButtonArry" destination="bT3-0l-TyU" id="BeR-Tu-1Vc"/>
+                        <outletCollection property="cradButtonArry" destination="oNW-Oh-Qyr" id="reU-GM-Xs3"/>
+                        <outletCollection property="cradButtonArry" destination="0vf-li-6m1" id="PUK-Hs-H1G"/>
+                        <outletCollection property="cradButtonArry" destination="DGV-jZ-tIA" id="grE-5N-ax0"/>
+                        <outletCollection property="cradButtonArry" destination="dTk-i6-PzT" id="ZlV-sC-NbT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
