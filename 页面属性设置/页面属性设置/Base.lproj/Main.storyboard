@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FFD-c8-iG4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="L6t-Ec-96M">
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
@@ -103,11 +103,10 @@
             </objects>
             <point key="canvasLocation" x="-870" y="-331"/>
         </scene>
-        <!--Collection View-->
+        <!--Test Status View Controller-->
         <scene sceneID="CNx-Jh-fPv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iny-CV-C0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="L6t-Ec-96M" customClass="CollectionView" sceneMemberID="viewController">
+                <viewController id="L6t-Ec-96M" customClass="TestStatusViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4sP-LT-DgT"/>
                         <viewControllerLayoutGuide type="bottom" id="Ek6-D9-53I"/>
@@ -115,9 +114,28 @@
                     <view key="view" contentMode="scaleToFill" id="xl6-sr-o7f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:颜色的字符串" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XU-uO-C4F">
+                                <rect key="frame" x="16" y="105" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:描边的字符串" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3f-KB-mU6">
+                                <rect key="frame" x="16" y="167" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="charateColorStatus" destination="e3f-KB-mU6" id="wVl-JO-zJ7"/>
+                        <outlet property="charateWidthStatus" destination="7XU-uO-C4F" id="kfh-kp-DDD"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iny-CV-C0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-505" y="-331"/>
         </scene>
