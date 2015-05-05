@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6e7f6"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/dh_list_project_ExpandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:groupIndicator="@null"
+            android:scrollbars="vertical" >
+        </ExpandableListView>
+
+        <RelativeLayout
+                android:id="@+id/dh_list_project_item_FLayout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="60dip"
+	                android:layout_marginLeft="30dip"
+	                android:background="@color/white"
+	                android:paddingBottom="5dip"
+	                android:paddingLeft="25dip"
+	                android:paddingRight="65dip"
+	                android:paddingTop="5dip"/>
+	
+	            <ImageView
+	                android:id="@+id/dh_list_project_item_FAdd_ImageView"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="10dip"
+	                android:src="@drawable/dh_list_item_add" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="30dip"
+                android:background="@color/white"
+                android:paddingBottom="5dip"
+                android:paddingLeft="25dip"
+                android:paddingRight="65dip"
+                android:paddingTop="5dip" />
+
+            <ImageView
+                android:id="@+id/dh_list_project_Add_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/dh_list_item_add" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

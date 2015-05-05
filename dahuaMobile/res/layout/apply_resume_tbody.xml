@@ -1,0 +1,216 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <!-- 销假列表 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linegraye5_bottom"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/linewhitee5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/apply_resume_tbody_FStartDate"
+                    style="@style/iconstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FLine"
+                android:layout_width="20dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text=""
+                android:textColor="#6e6e70"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- 明细列表 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/applyresume_FAmCheckTime" />
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FAmCheckTime"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/applyresume_FAmCheckResult" />
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FAmCheckResult"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/applyresume_FAmResume" />
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FAmResume"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/applyresume_FPmCheckTime" />
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FPmCheckTime"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/applyresume_FPmCheckResult" />
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FPmCheckResult"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/applyresume_FPmResume" />
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FPmResume"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/applyresume_FReason" />
+
+            <TextView
+                android:id="@+id/apply_resume_tbody_FReason"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

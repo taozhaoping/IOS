@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+         android:layout_width="fill_parent"  
+         android:layout_height="wrap_content"
+         android:background="#ffffff"
+         android:orientation="vertical"  >
+         
+        <!-- 表头 -->
+        <RelativeLayout 
+	         android:layout_width="fill_parent"  
+	         android:layout_height="wrap_content"
+	         android:background="@drawable/linegraye5_bottom"
+	         android:gravity="center_vertical">
+	    <RelativeLayout 
+	         android:layout_width="fill_parent"  
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="30dip"
+	         android:paddingTop="5dip"
+	         android:paddingBottom="5dip"
+	         android:paddingLeft="10dip"
+	         android:paddingRight="20dip" 
+	         android:background="@drawable/linewhitee5_bottom"
+	         android:gravity="center_vertical">
+	         
+	        <TextView
+                    style="@style/iconstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+	    </RelativeLayout>
+	    <TextView
+	                android:id="@+id/svn_permission_tbody_Line"
+                    android:layout_width="20dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dip"
+                    android:text=""
+                    android:textColor="#6e6e70"
+                    android:textSize="14sp" />
+	    </RelativeLayout>
+	    
+	    <!-- 地址 -->
+	    
+	    <LinearLayout 
+	         android:layout_width="fill_parent"  
+	         android:layout_height="wrap_content"
+	         android:paddingLeft="20dip"
+	         android:paddingRight="20dip" 
+	         android:paddingTop="15dip"
+	         android:paddingBottom="5dip"
+	         android:orientation="horizontal" >
+	         
+	            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/svnpermissiontbody_FAddress"
+	            style="@style/icons" />
+	         
+	            <TextView
+	            android:id="@+id/svnpermissiontbody_FAddress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="10dip"
+	            android:text=""
+	            style="@style/icons" />
+	         
+	    </LinearLayout>
+	    <LinearLayout 
+	         android:layout_width="fill_parent"  
+	         android:layout_height="wrap_content"
+	         android:paddingLeft="20dip"
+	         android:paddingRight="20dip" 
+	         android:paddingTop="5dip"
+	         android:paddingBottom="5dip"
+	         android:orientation="horizontal">
+	         
+	            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/svnpermissiontbody_FReadOrWrite"
+	            style="@style/icons" />
+	         
+	            <TextView
+	            android:id="@+id/svnpermissiontbody_FReadOrWrite"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="10dip"
+	            android:text=""
+	            style="@style/icons" />
+	         
+	    </LinearLayout>
+	    <LinearLayout 
+	         android:layout_width="fill_parent"  
+	         android:layout_height="wrap_content"
+	         android:paddingLeft="20dip"
+	         android:paddingRight="20dip" 
+	         android:paddingTop="5dip"
+	         android:paddingBottom="5dip">
+	         
+	            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/svnpermissiontbody_FResponsible"
+	            style="@style/icons" />
+	         
+	            <TextView
+	            android:id="@+id/svnpermissiontbody_FResponsible"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="10dip"
+	            android:text=""
+	            style="@style/icons" />
+	         
+	    </LinearLayout>
+	    <LinearLayout 
+	         android:layout_width="fill_parent"  
+	         android:layout_height="wrap_content"
+	         android:paddingLeft="20dip"
+	         android:paddingRight="20dip" 
+	         android:paddingTop="5dip"
+	         android:paddingBottom="15dip"
+	         android:orientation="horizontal" >
+	         
+	            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/svnpermissiontbody_FReason"
+	            style="@style/icons" />
+	         
+	            <TextView
+	            android:id="@+id/svnpermissiontbody_FReason"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="10dip"
+	            android:text=""
+	            style="@style/icons" />
+	         
+	    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,411 @@
+# view res/layout/guide_viewpager.xml #generated:8
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:44
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:27
+# view res/layout/abs__screen_simple.xml #generated:32
+# view res/layout/abs__screen_simple_overlay_action_mode.xml #generated:27
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:44
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:25
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout { <init>(...); }
+
+# view large\res/layout-large/abs__action_mode_close_item.xml #generated:17
+# view res/layout/abs__action_mode_close_item.xml #generated:17
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abs__action_menu_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abs__popup_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:27
+# view res/layout/abs__screen_action_bar.xml #generated:51
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:30
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:53
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:27
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:28
+-keep class com.actionbarsherlock.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abs__action_mode_bar.xml #generated:19
+# view res/layout/abs__screen_action_bar.xml #generated:37
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:41
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:37
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:38
+-keep class com.actionbarsherlock.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:32
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:36
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:32
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:33
+-keep class com.actionbarsherlock.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abs__action_bar_home.xml #generated:17
+-keep class com.actionbarsherlock.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:40
+-keep class com.actionbarsherlock.internal.widget.CapitalizingButton { <init>(...); }
+
+# view res/layout/abs__activity_chooser_view.xml #generated:19
+-keep class com.actionbarsherlock.internal.widget.IcsLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_bar_tab.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abs__action_bar_tab_bar_view.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.TabsLinearLayout { <init>(...); }
+
+# view res/layout/abs__search_view.xml #generated:84
+-keep class com.actionbarsherlock.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/attendance_check_in.xml #generated:57
+-keep class com.amap.api.maps.SupportMapFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.dahuatech.app.AppContext { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.dahuatech.app.AppExpiration { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.dahuatech.app.AppGuide { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.dahuatech.app.AppStart { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.dahuatech.app.AppWelcome { <init>(...); }
+
+# view AndroidManifest.xml #generated:1075
+-keep class com.dahuatech.app.ui.attendance.AdCheckInActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1087
+-keep class com.dahuatech.app.ui.attendance.AdListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:911
+-keep class com.dahuatech.app.ui.barcode.CaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:899
+-keep class com.dahuatech.app.ui.contacts.ContactsMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1050
+-keep class com.dahuatech.app.ui.develop.hour.DHConfirmListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1063
+-keep class com.dahuatech.app.ui.develop.hour.DHConfirmListPersonActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:990
+-keep class com.dahuatech.app.ui.develop.hour.DHDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1025
+-keep class com.dahuatech.app.ui.develop.hour.DHListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1038
+-keep class com.dahuatech.app.ui.develop.hour.DHListProjectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:978
+-keep class com.dahuatech.app.ui.develop.hour.DHMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1000
+-keep class com.dahuatech.app.ui.develop.hour.DHProjectSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1013
+-keep class com.dahuatech.app.ui.develop.hour.DHTypeListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:820
+-keep class com.dahuatech.app.ui.expense.flow.ExpenseClientSearchListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:807
+-keep class com.dahuatech.app.ui.expense.flow.ExpenseFlowDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:783
+-keep class com.dahuatech.app.ui.expense.flow.ExpenseFlowListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:795
+-keep class com.dahuatech.app.ui.expense.flow.ExpenseFlowLocalListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:835
+-keep class com.dahuatech.app.ui.expense.flow.ExpenseProjectSearchListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:771
+-keep class com.dahuatech.app.ui.expense.main.ExpenseMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:874
+-keep class com.dahuatech.app.ui.expense.taxi.ExpenseTaxiInputActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:887
+-keep class com.dahuatech.app.ui.expense.taxi.ExpenseTaxiItemViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:862
+-keep class com.dahuatech.app.ui.expense.taxi.ExpenseTaxiListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:850
+-keep class com.dahuatech.app.ui.expense.taxi.ExpenseTaxiMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.dahuatech.app.ui.main.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.dahuatech.app.ui.main.LoginLockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:132
+-keep class com.dahuatech.app.ui.main.LoginLockSetPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.dahuatech.app.ui.main.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class com.dahuatech.app.ui.main.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.dahuatech.app.ui.main.SmsNoticeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1111
+-keep class com.dahuatech.app.ui.market.MarketBidSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1123
+-keep class com.dahuatech.app.ui.market.MarketContractSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1099
+-keep class com.dahuatech.app.ui.market.MarketMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1135
+-keep class com.dahuatech.app.ui.market.MarketProductSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1147
+-keep class com.dahuatech.app.ui.market.MarketWorkflowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:933
+-keep class com.dahuatech.app.ui.meeting.MeetingDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:921
+-keep class com.dahuatech.app.ui.meeting.MeetingListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:946
+-keep class com.dahuatech.app.ui.meeting.MeetingPersonListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:962
+-keep class com.dahuatech.app.ui.meeting.MeetingRoomListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:1160
+-keep class com.dahuatech.app.ui.service.AlarmBroadCast { <init>(...); }
+
+# view AndroidManifest.xml #generated:1171
+-keep class com.dahuatech.app.ui.service.NetworkStateReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:1157
+-keep class com.dahuatech.app.ui.service.NoticeService { <init>(...); }
+
+# view AndroidManifest.xml #generated:439
+-keep class com.dahuatech.app.ui.task.ApplyDaysOffActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:451
+-keep class com.dahuatech.app.ui.task.ApplyDaysOffDevelopActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:403
+-keep class com.dahuatech.app.ui.task.ApplyLeaveActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:391
+-keep class com.dahuatech.app.ui.task.ApplyOverTimeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:415
+-keep class com.dahuatech.app.ui.task.ApplyResumeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:758
+-keep class com.dahuatech.app.ui.task.ContributionAwardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:355
+-keep class com.dahuatech.app.ui.task.DaHuaAssumeCostActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:367
+-keep class com.dahuatech.app.ui.task.DevelopInquiryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:379
+-keep class com.dahuatech.app.ui.task.DevelopInquiryLayoutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:331
+-keep class com.dahuatech.app.ui.task.DevelopTestNetworkActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:499
+-keep class com.dahuatech.app.ui.task.DevelopTravelActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:463
+-keep class com.dahuatech.app.ui.task.DocumentApproveActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:583
+-keep class com.dahuatech.app.ui.task.DoorPermissionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:523
+-keep class com.dahuatech.app.ui.task.EmailOpenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.dahuatech.app.ui.task.EngineeringActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:427
+-keep class com.dahuatech.app.ui.task.ExAttendanceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class com.dahuatech.app.ui.task.ExpenseCostTHeaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:307
+-keep class com.dahuatech.app.ui.task.ExpenseMarketBidTHeaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:295
+-keep class com.dahuatech.app.ui.task.ExpenseMarketPayTHeaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.dahuatech.app.ui.task.ExpensePrivateTBodyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.dahuatech.app.ui.task.ExpensePrivateTHeaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.dahuatech.app.ui.task.ExpensePublicTHeaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:283
+-keep class com.dahuatech.app.ui.task.ExpenseSpecialTBodyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:245
+-keep class com.dahuatech.app.ui.task.ExpenseSpecialTHeaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:271
+-keep class com.dahuatech.app.ui.task.ExpenseSpecialThingBodyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class com.dahuatech.app.ui.task.ExpenseSpecialThingHeaderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:643
+-keep class com.dahuatech.app.ui.task.FeDestroyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:655
+-keep class com.dahuatech.app.ui.task.FeEngravingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:667
+-keep class com.dahuatech.app.ui.task.FeTakeOutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:679
+-keep class com.dahuatech.app.ui.task.FeTransferActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:691
+-keep class com.dahuatech.app.ui.task.FeUpdateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:535
+-keep class com.dahuatech.app.ui.task.FixedAssetsSpecialActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:547
+-keep class com.dahuatech.app.ui.task.LowConsumableActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:721
+-keep class com.dahuatech.app.ui.task.LowerNodeApproveActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:343
+-keep class com.dahuatech.app.ui.task.MemRequreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:319
+-keep class com.dahuatech.app.ui.task.NetworkPermissionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:475
+-keep class com.dahuatech.app.ui.task.NewProductLibActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:595
+-keep class com.dahuatech.app.ui.task.NewProductReworkActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:731
+-keep class com.dahuatech.app.ui.task.PlusCopyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:741
+-keep class com.dahuatech.app.ui.task.PlusCopyPersonActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:631
+-keep class com.dahuatech.app.ui.task.ProjectReadActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:511
+-keep class com.dahuatech.app.ui.task.PurchaseStockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:487
+-keep class com.dahuatech.app.ui.task.SvnPermissionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.dahuatech.app.ui.task.TaskListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:607
+-keep class com.dahuatech.app.ui.task.TdBorrowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:619
+-keep class com.dahuatech.app.ui.task.TdPermissionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:559
+-keep class com.dahuatech.app.ui.task.TrainComputerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:571
+-keep class com.dahuatech.app.ui.task.TravelApprovalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:703
+-keep class com.dahuatech.app.ui.task.WorkFlowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:712
+-keep class com.dahuatech.app.ui.task.WorkFlowBeenActivity { <init>(...); }
+
+# view res/layout/expense_taxilist.xml #generated:22
+-keep class com.dahuatech.app.widget.DelSlideListView { <init>(...); }
+
+# view res/layout/expense_taxilistlayout.xml #generated:2
+-keep class com.dahuatech.app.widget.DelSlideScrollLinerLayout { <init>(...); }
+
+# view res/layout/login_lock.xml #generated:19
+# view res/layout/login_lock_setpwd.xml #generated:20
+-keep class com.dahuatech.app.widget.LockPatternView { <init>(...); }
+
+# view res/layout/lower_node_approve_spinner_role.xml #generated:22
+# view res/layout/lower_node_approve_spinner_user.xml #generated:21
+-keep class com.dahuatech.app.widget.MultiSelectionSpinner { <init>(...); }
+
+# view res/layout/tasklist.xml #generated:63
+-keep class com.dahuatech.app.widget.XListView { <init>(...); }
+
+# view res/layout/expense_flowlist.xml #generated:95
+-keep class com.handmark.pulltorefresh.library.PullToRefreshExpandableListView { <init>(...); }
+
+# view res/layout/dh_list.xml #generated:44
+# view res/layout/dh_project_search.xml #generated:45
+# view res/layout/expense_flowclient_search.xml #generated:8
+# view res/layout/expense_flowproject_search.xml #generated:8
+# view res/layout/market_bid_search.xml #generated:56
+# view res/layout/market_contract_search.xml #generated:56
+# view res/layout/market_product_search.xml #generated:56
+# view res/layout/meeting_list.xml #generated:43
+# view res/layout/meeting_person_list.xml #generated:78
+# view res/layout/meeting_room_list.xml #generated:8
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view res/layout/slidingmenumain.xml #generated:2
+-keep class com.jeremyfeinstein.slidingmenu.lib.SlidingMenu { <init>(...); }
+
+# view res/layout/capture.xml #generated:12
+-keep class com.zxing.view.ViewfinderView { <init>(...); }
+
+# onClick res/layout/login.xml #generated:121
+-keepclassmembers class * { *** OnTestClick(...); }
+
+# onClick res/layout/contacts_clear_item.xml #generated:20
+-keepclassmembers class * { *** dataClear(...); }
+
+# onClick res/layout/meeting_person_list_item.xml #generated:34
+# onClick res/layout/pluscopy_person_item.xml #generated:35
+-keepclassmembers class * { *** onFItemNameClick(...); }
+
+# onClick res/layout/meeting_room_list_item.xml #generated:39
+-keepclassmembers class * { *** onFTypeClick(...); }
+
+# onClick res/layout/meeting_detail.xml #generated:142
+-keepclassmembers class * { *** onMeetingDate(...); }
+
+# onClick res/layout/meeting_detail.xml #generated:171
+-keepclassmembers class * { *** onMeetingEnd(...); }
+
+# onClick res/layout/meeting_detail.xml #generated:157
+-keepclassmembers class * { *** onMeetingStart(...); }
+

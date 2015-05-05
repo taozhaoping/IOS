@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="@drawable/stroke_ff" >
+
+    <RelativeLayout
+        android:id="@+id/expense_flowlist_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="0dip"
+        android:paddingRight="5dip"
+        android:paddingTop="3dip"
+        android:layout_marginTop="1dip"
+        android:layout_marginLeft="20dip"
+        android:stretchColumns="0"> 
+          
+        <TextView
+            android:id="@+id/expense_flowlist_item_FCause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/expense_flowlist_item_FExpendType"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            style="@style/listiconstitle" />
+
+        <TextView
+            android:id="@+id/expense_flowlist_item_FExpendAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_flowlist_item_FCause"
+            android:layout_toLeftOf="@+id/expense_flowlist_item_FExpendType"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/list_where"
+            android:text=""
+            style="@style/listiconswhere" />
+
+        <TextView
+            android:id="@+id/expense_flowlist_item_FExpendType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dip"
+            android:text=""
+            style="@style/listiconsitem" />
+
+        <TextView
+            android:id="@+id/expense_flowlist_item_FExpendAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/expense_flowlist_item_FExpendType"
+            android:text=""
+            style="@style/listiconsamount" />
+      
+    </RelativeLayout>
+
+</RelativeLayout>

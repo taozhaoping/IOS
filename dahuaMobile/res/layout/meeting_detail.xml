@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:id="@+id/meeting_detail_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/meeting_detail_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+			    <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="15dip"
+			        android:layout_marginRight="15dip"
+			        android:background="@drawable/linewhite_bottom"
+			        android:orientation="horizontal"
+			        android:paddingBottom="1dip"
+			        android:paddingTop="15dip" >
+			
+			        <ImageView
+			            android:id="@+id/meeting_detail_icon"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:layout_marginRight="-1dip"
+			            android:background="@drawable/linewhite_leftright"
+			            android:paddingBottom="7dip"
+			            android:paddingRight="15dip"
+			            android:src="@drawable/meeting" />
+			
+			        <RelativeLayout
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/linewhite_right"
+			            android:paddingBottom="1dip"
+			            android:paddingLeft="0dip" >
+			
+			            <TextView
+			                android:id="@+id/meeting_detail_ApplyName"
+			                style="@style/meeting_title"
+			                android:layout_width="70dip"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical|right"
+			                android:text="@string/meeting_detail_FApplyName" />
+			
+			            <TextView
+			                android:id="@+id/meeting_detail_FApplyName"
+			                style="@style/meeting_content"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_toRightOf="@+id/meeting_detail_ApplyName"
+			                android:text="" />
+			
+			            <TextView
+			                android:id="@+id/meeting_detail_ApplyDept"
+			                style="@style/meeting_title"
+			                android:layout_width="70dip"
+			                android:layout_height="wrap_content"
+			                android:layout_below="@+id/meeting_detail_ApplyName"
+			                android:gravity="center_vertical|right"
+			                android:text="@string/meeting_detail_FApplyDept" />
+			
+			            <TextView
+			                android:id="@+id/meeting_detail_FApplyDept"
+			                style="@style/meeting_content"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_below="@+id/meeting_detail_ApplyName"
+			                android:layout_toRightOf="@+id/meeting_detail_ApplyDept"
+			                android:text="" />
+			        </RelativeLayout>
+			    </LinearLayout>
+			
+			    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="15dip"
+			        android:layout_marginRight="15dip"
+			        android:background="@drawable/linewhite_bottom"
+			        android:paddingBottom="1dip"
+			        android:paddingTop="0dip" >
+			
+			        <EditText
+			            android:id="@+id/meeting_detail_FMeetingName"
+			            style="@style/meeting_content"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:background="#e9e9e9"
+			            android:paddingBottom="20dip"
+			            android:paddingTop="20dip"
+			            android:cursorVisible="false"
+			            android:inputType="text"
+			            android:text="" />
+			
+			        <TextView
+			            style="@style/meetingtitle"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="#ff5340"
+			            android:paddingLeft="5dip"
+			            android:paddingRight="5dip"
+			            android:text="@string/meeting_detail_FMeetingName" />
+			
+			        <ImageView
+			            android:id="@+id/meeting_detail_FMeetingName_ImageView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="15dip"
+			            android:src="@drawable/btn_input" />
+			    </RelativeLayout>
+			
+			    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="15dip"
+			        android:layout_marginRight="15dip"
+			        android:background="@drawable/linewhite_bottom"
+			        android:paddingBottom="1dip"
+			        android:paddingTop="0dip" >
+			
+			        <TableLayout
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:stretchColumns="*" >
+			
+			            <TableRow android:gravity="center_vertical" >
+			
+			                <TextView
+			                    android:id="@+id/meeting_detail_FMeetingDate"
+			                    style="@style/meeting_content"
+			                    android:layout_width="1dip"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dip"
+			                    android:layout_marginTop="10dip"
+			                    android:background="@drawable/linewhite_leftright"
+			                    android:gravity="center"
+			                    android:paddingBottom="10dip"
+			                    android:paddingTop="10dip"
+			                    android:text="@string/meeting_detail_FMeetingDate"
+			                    android:clickable="true" 
+			                    android:onClick="onMeetingDate"/>
+			
+			                <TextView
+			                    android:id="@+id/meeting_detail_FMeetingStart"
+			                    style="@style/meeting_content"
+			                    android:layout_width="1dip"
+			                    android:layout_height="wrap_content"
+			                    android:gravity="center"
+			                    android:layout_marginBottom="10dip"
+			                    android:layout_marginTop="10dip"
+			                    android:paddingBottom="10dip"
+			                    android:paddingTop="10dip"
+			                    android:text="@string/meeting_detail_FMeetingStart"
+			                    android:clickable="true" 
+			                    android:onClick="onMeetingStart"/>
+			
+			                <TextView
+			                    android:id="@+id/meeting_detail_FMeetingEnd"
+			                    style="@style/meeting_content"
+			                    android:layout_width="1dip"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dip"
+			                    android:layout_marginTop="10dip"
+			                    android:background="@drawable/linewhite_right"
+			                    android:gravity="center"
+			                    android:paddingBottom="10dip"
+			                    android:paddingTop="10dip"
+			                    android:text="@string/meeting_detail_FMeetingEnd" 
+			                    android:clickable="true"
+			                    android:onClick="onMeetingEnd"/>
+			                
+			            </TableRow>
+			        </TableLayout>
+			
+			        <TextView
+			            style="@style/meetingtitle"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="#ff5340"
+			            android:paddingLeft="5dip"
+			            android:paddingRight="5dip"
+			            android:text="@string/meeting_detail_FMeetingTime" />
+			    </RelativeLayout>
+			
+			    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="15dip"
+			        android:layout_marginRight="15dip"
+			        android:background="@drawable/linewhite_bottom"
+			        android:paddingBottom="1dip"
+			        android:paddingTop="0dip" >
+			
+			        <TextView
+			            android:id="@+id/meeting_detail_FMeetingMasterId"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:text=""
+			            android:visibility="gone" />
+			
+			        <TextView
+			            android:id="@+id/meeting_detail_FMeetingMasterName"
+			            style="@style/meeting_content"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:background="#e9e9e9"
+			            android:paddingBottom="20dip"
+			            android:paddingTop="20dip"
+			            android:text="" />
+			
+			        <TextView
+			            style="@style/meetingtitle"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="#ff5340"
+			            android:paddingLeft="5dip"
+			            android:paddingRight="5dip"
+			            android:text="@string/meeting_detail_FMeetingMaster" />
+			
+			        <ImageView
+			            android:id="@+id/meeting_detail_FMeetingMaster_ImageView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="15dip"
+			            android:src="@drawable/btn_search" />
+			    </RelativeLayout>
+			
+			    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="15dip"
+			        android:layout_marginRight="15dip"
+			        android:background="@drawable/linewhite_bottom"
+			        android:paddingBottom="1dip"
+			        android:paddingTop="0dip" >
+			
+			        <TextView
+			            android:id="@+id/meeting_detail_FMeetingRoomId"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:text=""
+			            android:visibility="gone" />
+			
+			        <TextView
+			            android:id="@+id/meeting_detail_FMeetingRoomIp"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:text=""
+			            android:visibility="gone" />
+			
+			        <TextView
+			            android:id="@+id/meeting_detail_FMeetingRoomName"
+			            style="@style/meeting_content"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:background="#e9e9e9"
+			            android:paddingBottom="20dip"
+			            android:paddingTop="20dip"
+			            android:text="" />
+			
+			        <TextView
+			            style="@style/meetingtitle"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="#ff5340"
+			            android:paddingLeft="5dip"
+			            android:paddingRight="5dip"
+			            android:text="@string/meeting_detail_FMeetingRoom" />
+			
+			        <ImageView
+			            android:id="@+id/meeting_detail_FMeetingRoom_ImageView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="15dip"
+			            android:src="@drawable/btn_search" />
+			    </RelativeLayout>
+			
+			    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="15dip"
+			        android:layout_marginRight="15dip"
+			        android:background="@drawable/linewhite_bottom"
+			        android:paddingBottom="1dip"
+			        android:paddingTop="0dip" >
+			
+			        <TextView
+			            android:id="@+id/meeting_detail_FMeetingPerson"
+			            style="@style/meeting_content"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:background="#e9e9e9"
+			            android:paddingBottom="25dip"
+			            android:paddingTop="25dip"
+			            android:text="" />
+			
+			        <TextView
+			            style="@style/meetingtitle"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="#ff5340"
+			            android:paddingLeft="5dip"
+			            android:paddingRight="5dip"
+			            android:text="@string/meeting_detail_FMeetingPerson" />
+			
+			        <ImageView
+			            android:id="@+id/meeting_detail_FMeetingPerson_ImageView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="15dip"
+			            android:src="@drawable/btn_search" />
+			    </RelativeLayout>
+			
+			    <TableLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingBottom="20dip"
+			        android:paddingLeft="30dip"
+			        android:paddingRight="30dip"
+			        android:paddingTop="20dip"
+			        android:stretchColumns="*" >
+			
+			        <TableRow android:gravity="center_vertical" >
+			
+			            <Button
+			                android:id="@+id/meeting_detail_button_FSave"
+			                style="@style/button_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginRight="25dip"
+			                android:background="@drawable/imgbtn_blue"
+			                android:minHeight="0dip"
+			                android:text="@string/meeting_detail_button_FCreate" />
+			
+			            <Button
+			                android:id="@+id/meeting_detail_button_FCancle"
+			                style="@style/button_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginLeft="25dip"
+			                android:background="@drawable/imgbtn_blue"
+			                android:minHeight="0dip"
+			                android:text="@string/meeting_detail_button_FCancle" />
+			        </TableRow>
+			    </TableLayout>
+			    
+			  </LinearLayout>
+			  </ScrollView>
+
+</LinearLayout>

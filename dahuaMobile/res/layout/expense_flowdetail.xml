@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/expense_flowdetail_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/expense_flowdetail_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"                
+                android:orientation="horizontal"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_flow_add" />
+                
+                <TextView
+                    style="@style/iconsred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_flow_E" />
+            </LinearLayout>
+
+            <!-- 金额时间 -->
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <EditText
+                        android:id="@+id/expense_flowdetail_FExpendAmount"
+                        style="@style/iconsred"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/amount_2014"
+                        android:drawableRight="@drawable/btn_input"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="5dip"
+                        android:inputType="numberDecimal"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/expense_flowdetail_FExpendTime"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linegray_left"
+                        android:drawableLeft="@drawable/clock"
+                        android:drawableRight="@drawable/btn_input"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="5dip"
+                        android:inputType="datetime"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- 消费类型 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:text="@string/expense_flow_detail_FExpendType" />
+                
+                <TextView
+                    style="@style/iconsred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_flow_E" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/expense_flowdetail_Spinner_Parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/expendtype_labels_array" />
+
+                    <Spinner
+                        android:id="@+id/expense_flowdetail_Spinner_Child"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 消费地点 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"                
+                android:orientation="horizontal"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_flow_detail_FExpendAddress" />
+                
+                <TextView
+                    style="@style/iconsred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_flow_E" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <EditText
+                    android:id="@+id/expense_flowdetail_FExpendAddress"
+                    style="@style/icons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/expense_flowdetail_FExpendAddress_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:src="@drawable/btn_input" />
+            </RelativeLayout>
+
+            <!-- 消费事由 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"                
+                android:orientation="horizontal"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_flow_detail_FCause" />
+                
+                <TextView
+                    style="@style/iconsred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_flow_E" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <EditText
+                    android:id="@+id/expense_flowdetail_FCause"
+                    style="@style/icons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/expense_flowdetail_FCause_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:src="@drawable/btn_input" />
+            </RelativeLayout>
+
+            <!-- 客户名称 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/expense_flow_detail_FClient" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/expense_flowdetail_FClient_FId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/expense_flowdetail_FClient"
+                    style="@style/icons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/expense_flowdetail_FClient_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:src="@drawable/btn_search" />
+            </RelativeLayout>
+
+            <!-- 项目名称 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/expense_flow_detail_FProject" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/expense_flowdetail_FProject_FId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/expense_flowdetail_FProject"
+                    style="@style/icons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/expense_flowdetail_FProject_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:src="@drawable/btn_search" />
+            </RelativeLayout>
+
+            <!-- 有无陪同 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/expense_flow_detail_FAccompany" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <RadioGroup
+                    android:id="@+id/expense_flow_detail_FAccompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="70dip"
+                    android:paddingTop="10dip" >
+
+                    <RadioButton
+                        android:id="@+id/expense_flow_detail_FAccompany_yes"
+                        style="@style/Radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:text="@string/expense_flow_detail_FAccompany_yes" />
+
+                    <RadioButton
+                        android:id="@+id/expense_flow_detail_FAccompany_no"
+                        style="@style/Radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expense_flow_detail_FAccompany_no" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <!-- 陪同人员/无陪同原因 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/expense_flow_detail_FAccompanylabel"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/expense_flow_detail_FAccompanyPerson" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <EditText
+                    android:id="@+id/expense_flow_detail_FAccompanyReason"
+                    style="@style/icons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:text="" />
+
+                <ImageView
+                     android:id="@+id/expense_flow_detail_FAccompanyReason_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:src="@drawable/btn_input" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

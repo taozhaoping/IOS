@@ -1,0 +1,239 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@null">
+    
+    <LinearLayout
+         android:layout_width="fill_parent"  
+         android:layout_height="wrap_content"
+         android:background="#ffffff"
+         android:orientation="vertical"  >
+
+        <!-- 文件列表 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linegraye5_bottom"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/linewhitee5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/fe_destroy_tbody_FeType"
+                    style="@style/iconstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FLine"
+                android:layout_width="20dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text=""
+                android:textColor="#6e6e70"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- 明细列表 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FeCode" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FeCode"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FeName" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FeName"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FCompany" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FCompany"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FStatus" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FStatus"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FKeeper" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FKeeper"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FKeeperDept" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FKeeperDept"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FKeeperArea" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FKeeperArea"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fedestroybody_FDestroyTime" />
+
+            <TextView
+                android:id="@+id/fe_destroy_tbody_FDestroyTime"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+        
+        </LinearLayout>        
+</FrameLayout>

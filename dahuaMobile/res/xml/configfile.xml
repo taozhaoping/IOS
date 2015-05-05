@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全局配置信息 -->
+<DahuaMobile>
+    <!-- 我的任务列表配置信息 -->
+    <TaskListActivity>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">59</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">GetRecordList</Item>
+        <Item name="ServiceType">1</Item>   
+        <Item name="SqlType">true</Item>
+        <Item name="IsCahce">false</Item>
+    </TaskListActivity>
+    
+    <!-- 旧版-工作流配置信息 -->
+    <OldWorkFlowActivity>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">59</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">GetWorkFlowDetailFormal</Item>
+        <Item name="ServiceType">1</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item> 
+    </OldWorkFlowActivity>
+    
+    <!-- 新版-工作流配置信息 -->
+    <NewWorkFlowActivity>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">60</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">NewGetWorkFlowDetailFormal</Item>
+        <Item name="ServiceType">1</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>
+    </NewWorkFlowActivity>
+    
+    <!-- HR版-工作流配置信息 -->
+    <HrWorkFlowActivity>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">63</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">HrGetWorkFlowDetailFormal</Item>
+        <Item name="ServiceType">1</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>
+    </HrWorkFlowActivity>
+    
+    <!-- CRM版-工作流配置信息 -->
+    <CrmWorkFlowActivity>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">64</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">CrmGetWorkFlowDetail</Item>
+        <Item name="ServiceType">1</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>
+    </CrmWorkFlowActivity>
+    
+    <!-- 报销版-工作流配置信息 -->
+    <EpWorkFlowActivity>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">65</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">EpGetWorkFlowDetail</Item>
+        <Item name="ServiceType">1</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>
+    </EpWorkFlowActivity>
+    
+    <!-- 旧版-工作流审批配置信息 -->
+    <WorkFlowAPP>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">57</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">ExecuteWorkflow</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </WorkFlowAPP>  
+    
+    <!-- 旧版-工作流驳回配置信息 -->
+    <WorkFlowReject>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">57</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">ExecuteReject</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>     
+    </WorkFlowReject> 
+    
+    <!-- 新版-工作流审批配置信息 -->
+    <NewWorkFlowAPP>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">61</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">PassWorkflow</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </NewWorkFlowAPP>  
+    
+    <!-- 新版-工作流驳回配置信息  -->
+    <NewWorkFlowReject>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">61</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">RejectWorkflow</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </NewWorkFlowReject>  
+     
+    <!-- 新版-驳回节点配置信息  -->
+    <RejectNodeRepository>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">61</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">GetRejectNodeCollection</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </RejectNodeRepository>   
+    
+    <!-- 新版-加签/抄送节点配置信息  -->
+    <PlusCopyNodeRepository>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">61</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">GetCurrentDealingNode</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </PlusCopyNodeRepository>   
+    
+    <!-- 新版-下级当前环节是否有手工选择的权限  -->
+    <LowerNodeAppCheck>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">61</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">CheckChooseNextStep</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </LowerNodeAppCheck>  
+    
+    <!-- 新版-下级节点审批人配置信息  -->
+    <LowerNodeAppRepository>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">61</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">ParseChooseNextStep</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </LowerNodeAppRepository>   
+    
+    <!-- HR版-工作流审批配置信息 -->
+    <HrWorkFlowAPP>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">62</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">PassWorkflow</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </HrWorkFlowAPP>  
+    
+    <!-- HR版-工作流驳回配置信息  -->
+    <HrWorkFlowReject>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">62</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">RejectWorkflow</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </HrWorkFlowReject>  
+     
+    <!-- HR版-驳回节点配置信息  -->
+    <HrRejectNodeRepository>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">62</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">GetRejectNodeCollection</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </HrRejectNodeRepository>   
+    
+    <!-- 报销版-工作流审批配置信息 -->
+    <EpWorkFlowAPP>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">66</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">PassWorkflow</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </EpWorkFlowAPP>  
+    
+    <!-- 报销版-工作流驳回配置信息  -->
+    <EpWorkFlowReject>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">66</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">RejectWorkflow</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </EpWorkFlowReject>  
+     
+    <!-- 报销版-驳回节点配置信息  -->
+    <EpRejectNodeRepository>
+        <!-- 仓储实体 -->
+        <Item name="ClassType">66</Item>
+        <Item name="IsTest">1</Item>
+        <Item name="ServiceName">GetRejectNodeCollection</Item>
+        <Item name="ServiceType">5</Item>   
+        <Item name="SqlType">false</Item>
+        <Item name="IsCahce">false</Item>  
+    </EpRejectNodeRepository>   
+</DahuaMobile>
+

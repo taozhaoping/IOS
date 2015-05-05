@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+  
+    <RelativeLayout 
+         android:id="@+id/market_contract_search" 
+         android:layout_width="fill_parent"  
+         android:layout_height="wrap_content"
+         android:background="#e9e9e9"
+         android:paddingLeft="20dip"
+         android:paddingRight="20dip"
+         android:paddingTop="10dip"
+         android:paddingBottom="10dip" >
+  
+         <RelativeLayout
+             android:id="@+id/market_contract_searchtext" 
+             android:layout_width="fill_parent"  
+             android:layout_height="wrap_content"
+             android:background="@drawable/corners_bg_white" >
+             
+             <EditText
+                 android:id="@+id/market_contract_searchEditText"
+                 android:layout_width="fill_parent"  
+                 android:layout_height="wrap_content"
+                 android:hint="@string/market_contract_search"
+                 android:singleLine="true"
+                 android:textColorHint="#aaaaaa"
+                 style="@style/cot_search" />
+             
+             <ImageButton
+                 android:id="@+id/market_contract_searchImageButton"
+                 android:layout_width="60dip"  
+                 android:layout_height="22dip"
+                 android:paddingLeft="30dip"
+                 android:src="@drawable/btn_search"
+                 android:background="@null"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginTop="8dip"
+                 android:layout_marginRight="8dip" />
+             
+         </RelativeLayout>
+    </RelativeLayout>
+    <!-- 顶部结束 -->
+    
+    <!-- 中间开始 -->  
+    
+    <RelativeLayout  
+         android:layout_width="match_parent"  
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/market_contract_search"
+         android:layout_marginLeft="20dip" > 
+ 
+	      <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/market_contract_pullToRefreshListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="1dip"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="vertical" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </RelativeLayout>
+    <!-- 中间结束 -->
+   
+
+</RelativeLayout>

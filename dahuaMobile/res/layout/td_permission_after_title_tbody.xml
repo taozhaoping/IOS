@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <!-- TD帐号申请具体信息（产品发布后，产品交付履行适用） -->
+     <RelativeLayout 
+         android:layout_width="fill_parent"  
+         android:layout_height="wrap_content"
+         android:paddingTop="5dip"
+         android:paddingBottom="5dip"
+         android:paddingLeft="20dip"
+         android:paddingRight="20dip" 
+         android:background="@drawable/linegraye5_bottom"
+         android:gravity="center_vertical">
+         
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:text="@string/tdpermission_FAfterTitle"
+             style="@style/icons" />
+               
+      </RelativeLayout>
+
+</FrameLayout>

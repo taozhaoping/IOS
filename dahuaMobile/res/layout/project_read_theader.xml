@@ -1,0 +1,269 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" > 
+    
+    <ScrollView
+        android:id="@+id/project_read_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/project_read_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <!-- 单据编码 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+	            android:orientation="horizontal"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/project_read_No"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/engineering_No" />
+
+                <TextView
+                    android:id="@+id/project_read_FBillNo"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- 申请人申请时间 -->
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/project_read_FApplyName"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user"
+                        android:paddingLeft="20dip"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/project_read_FApplyDate"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linegray_left"
+                        android:drawableLeft="@drawable/clock"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+            
+            <!-- 部门 -->
+            
+            <RelativeLayout 
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" 
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/projectread_FApplyDept"
+                    style="@style/icons" />
+                      
+             </RelativeLayout>
+             <RelativeLayout 
+                 android:layout_width="fill_parent"  
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="20dip"
+                 android:paddingRight="20dip" 
+                 android:paddingTop="15dip"
+                 android:paddingBottom="15dip"
+                 android:background="@drawable/linegray_bottom">
+                
+                <TextView  
+                    android:id="@+id/project_read_FApplyDept"  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/icons" />
+         
+            </RelativeLayout>
+            
+            <!-- 联系电话 -->
+            
+            <RelativeLayout 
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" 
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/projectread_FTel"
+                    style="@style/icons" />
+                      
+             </RelativeLayout>
+             <RelativeLayout 
+                 android:layout_width="fill_parent"  
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="20dip"
+                 android:paddingRight="20dip" 
+                 android:paddingTop="15dip"
+                 android:paddingBottom="15dip"
+                 android:background="@drawable/linegray_bottom">
+                
+                <TextView  
+                    android:id="@+id/project_read_FTel"  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/icons" />
+         
+            </RelativeLayout>
+
+             <!-- 权限修改类型 -->
+            <RelativeLayout 
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" 
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/projectread_FPermissionType"
+                    style="@style/icons" />
+                      
+             </RelativeLayout>
+             <RelativeLayout 
+                 android:layout_width="fill_parent"  
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="20dip"
+                 android:paddingRight="20dip" 
+                 android:paddingTop="15dip"
+                 android:paddingBottom="15dip"
+                 android:background="@drawable/linegray_bottom">
+                
+                <TextView
+                    android:id="@+id/project_read_FPermissionType"     
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/icons" />
+         
+            </RelativeLayout>    
+            
+            <!-- 项目管理权限相关产品线选择-->
+            <RelativeLayout 
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" 
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/projectread_FProjectManage"
+                    style="@style/icons" />
+                      
+             </RelativeLayout>
+             <RelativeLayout 
+                 android:layout_width="fill_parent"  
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="20dip"
+                 android:paddingRight="20dip" 
+                 android:paddingTop="15dip"
+                 android:paddingBottom="15dip"
+                 android:background="@drawable/linegray_bottom">
+                
+                <TextView
+                    android:id="@+id/project_read_FProjectManage"     
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/icons" />
+         
+            </RelativeLayout>    
+            
+            <!-- 程序发布通知权限相关信息选择-->
+            <RelativeLayout 
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" 
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/projectread_FProgramPublic"
+                    style="@style/icons" />
+                      
+             </RelativeLayout>
+             <RelativeLayout 
+                 android:layout_width="fill_parent"  
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="20dip"
+                 android:paddingRight="20dip" 
+                 android:paddingTop="15dip"
+                 android:paddingBottom="15dip"
+                 android:background="@drawable/linegray_bottom">
+                
+                <TextView
+                    android:id="@+id/project_read_FProgramPublic"     
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/icons" />
+         
+            </RelativeLayout>    
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

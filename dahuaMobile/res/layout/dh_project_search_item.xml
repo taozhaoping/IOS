@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_item_color_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dh_project_search_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip" 
+        android:stretchColumns="*">
+
+        <TextView
+            android:id="@+id/dh_project_search_item_FProjectCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            style="@style/dh_project_no"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/dh_project_search_item_FProjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dh_project_search_item_FProjectCode"
+            style="@style/dh_project_name"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/customdialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#343539"
+            android:gravity="center"
+            android:padding="20dip"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/customdialog_contentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/iconsamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="50dip"
+                android:text="@string/engineering_165"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/customdialog_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="left|center"
+                android:inputType="numberDecimal"
+                android:minHeight="60.0dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="20dip"
+                android:text="" />
+
+            <requestFocus />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffd0d0d0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/dialog_bottom_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/customdialog_positiveButton"
+                style="@style/button_text"
+                android:layout_width="114.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/imgbtn_blue"
+                android:gravity="center"
+                android:text="@string/customdialog_ok" />
+
+            <Button
+                android:id="@+id/customdialog_negativeButton"
+                style="@style/button_text"
+                android:layout_width="114.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/imgbtn_red"
+                android:gravity="center"
+                android:text="@string/customdialog_cancle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

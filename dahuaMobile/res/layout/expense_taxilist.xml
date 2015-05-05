@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/expense_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <include layout="@layout/expense_taxifooter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expense_buttons"
+        android:layout_marginLeft="20dip" >
+    
+        <com.dahuatech.app.widget.DelSlideListView
+	        android:id="@+id/tasklist_ListView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="false"
+            android:scrollbars="vertical"
+            android:cacheColorHint="#00000000"
+            android:fadingEdgeLength="0.0sp"
+            android:divider="@null" >
+        </com.dahuatech.app.widget.DelSlideListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/items_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:stretchColumns="*"
+        android:background="#343539"
+        android:paddingTop="5dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
+        
+    <TableRow
+        android:gravity="center_vertical"
+        android:background="@drawable/corners_bg_red"
+        android:padding="1dip">
+    <Button
+        android:id="@+id/items_imgbtnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tasklist_list"
+        style="@style/tabs_active" />
+
+    <Button
+        android:id="@+id/items_imgbtnHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tasklist_history"
+        style="@style/tabs_default_right" />
+
+    </TableRow>
+    
+</TableLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#343539" >
+
+        <TextView
+            android:id="@+id/main_txtTitle"
+            android:text="@string/app_dahua"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="105dip"
+            style="@style/items_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <ImageView
+            android:id="@+id/main_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/btn_logo" 
+            android:contentDescription="@string/app_name"/>
+
+    </RelativeLayout>

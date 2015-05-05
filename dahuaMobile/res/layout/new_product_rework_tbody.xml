@@ -1,0 +1,269 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linegraye5_bottom"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/linewhitee5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <!-- 物料名称-->
+                <TextView
+                    android:id="@+id/new_product_rework_tbody_FMaterialName"
+                    style="@style/iconstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FLine"
+                android:layout_width="20dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text=""
+                android:textColor="#6e6e70"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- 明细列表 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FMaterialCode" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FMaterialCode"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FLocationCode" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FLocationCode"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FModel" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FModel"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FLocation" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FLocation"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FType" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FType"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FAmount" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FAmount"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FRequireTime" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FRequireTime"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FExpectedTime" />
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FExpectedTime"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newproductreworkbody_FContent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dip"
+            android:paddingLeft="40dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/new_product_rework_tbody_FContent"
+                style="@style/icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

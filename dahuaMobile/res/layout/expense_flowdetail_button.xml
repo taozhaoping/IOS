@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+		        android:background="#ffffff"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip"
+		        android:paddingLeft="30dip"         
+		        android:paddingRight="30dip"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical" >
+
+                    <Button
+	                 android:id="@+id/expense_flow_detail_button_temp" 
+	                 android:layout_width="wrap_content"  
+	                 android:layout_height="wrap_content"
+				     android:layout_marginRight="25dip"
+	                 android:minHeight="0dip"                      
+	                 android:text="@string/expense_flow_detail_button_temp"
+	                 android:background="@drawable/imgbtn_blue"
+	                 style="@style/button_text" />
+
+                    <Button
+	                 android:id="@+id/expense_flow_detail_button_upload" 
+	                 android:layout_width="wrap_content"  
+	                 android:layout_height="wrap_content"
+				     android:layout_marginLeft="25dip"
+	                 android:minHeight="0dip"
+	                 android:text="@string/expense_flow_detail_button_upload"
+	                 android:background="@drawable/imgbtn_blue"
+	                 style="@style/button_text" />
+                </TableRow>
+            </TableLayout>
+</FrameLayout>

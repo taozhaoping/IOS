@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"  >
+        
+        <TableRow
+            android:gravity="center_vertical" >
+
+		    <Button
+		        android:id="@+id/expense_main_taxi"
+		        style="@style/main_icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/menubutton"
+		        android:clickable="true"
+		        android:drawableTop="@drawable/taxi"
+		        android:text="@string/expensetaxi_main" />
+		    
+		    <Button
+		        android:id="@+id/expense_main_flow"
+		        style="@style/main_icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/menubutton"
+		        android:clickable="true"
+		        android:drawableTop="@drawable/flow"
+		        android:text="@string/expense_flow" />
+		    
+		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/space" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

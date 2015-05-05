@@ -12,10 +12,47 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *HeardTital;
 @property (weak, nonatomic) IBOutlet UITextView *lineBody;
+@property (weak, nonatomic) IBOutlet UIButton *lableButton;
 @end
 
 @implementation ViewController
 
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSMutableAttributedString * title = [[NSMutableAttributedString alloc] initWithString:self.lableButton.currentTitle];
+    [title addAttributes:@{NSStrokeWidthAttributeName:@3,
+                          NSStrokeColorAttributeName:self.lableButton.tintColor} range:NSMakeRange(0, [title length])];
+    [self.lableButton setAttributedTitle:title forState:UIControlStateNormal];
+    
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //同步系统字体大小
+    [self userPreefderChagnes];
+    //注册广播（广播名称为 字体大小改变）
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preefderFontChanges:) name:UIContentSizeCategoryDidChangeNotification object:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIContentSizeCategoryDidChangeNotification object:nil];
+}
+
+-(void)preefderFontChanges:(NSNotificationCenter *)nsNotificationCenter
+{
+    [self userPreefderChagnes];
+}
+
+-(void)userPreefderChagnes
+{
+    self.lineBody.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.HeardTital.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    
+}
 
 - (IBAction)changBody:(UIButton *)sender {
     

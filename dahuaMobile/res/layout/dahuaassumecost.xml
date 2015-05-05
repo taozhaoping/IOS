@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+     <ScrollView
+        android:id="@+id/dahuaassumecost_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/dahuaassumecost_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 单据编码 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/dahuaassumecost_No"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/engineering_No" />
+
+                <TextView
+                    android:id="@+id/dahuaassumecost_FBillNo"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/dahuaassumecost_No"
+                    android:text="" />
+            </RelativeLayout>
+
+            <!-- 申请人名称和申请日期 -->
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/dahuaassumecost_FApplyName"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user"
+                        android:paddingLeft="20dip"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/dahuaassumecost_FApplyDate"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linegray_left"
+                        android:drawableLeft="@drawable/clock"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- 货物类型和PI信息 -->
+            <TableLayout
+                android:id="@+id/dahuaassumecost_tb1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip" >
+
+                    <TextView
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:text="@string/dahuaassumecost_GoodsType" />
+
+                    <TextView
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dip"
+                        android:text="@string/dahuaassumecost_PIInfo" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/developtestnetwork_tb2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/dahuaassumecost_FGoodsType"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/dahuaassumecost_FPIInfo"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linegray_left"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+            
+             <!-- 商务人员和运费预估 -->
+            <TableLayout
+                android:id="@+id/dahuaassumecost_tb3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip" >
+
+                    <TextView
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:text="@string/dahuaassumecost_BusinessName" />
+
+                    <TextView
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dip"
+                        android:text="@string/dahuaassumecost_FreightEstimate" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/developtestnetwork_tb4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/dahuaassumecost_FBusinessName"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/amount_2001"
+                        android:paddingLeft="20dip"
+                        android:text="" />
+                    
+                     <TextView
+                        android:id="@+id/dahuaassumecost_FFreightEstimate"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linegray_left"
+                        android:drawableLeft="@drawable/amount_2014"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+            
+            <!-- 原因说明 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView  
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dahuaassumecost_Cause" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/dahuaassumecost_FCause"
+                    style="@style/iconsamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

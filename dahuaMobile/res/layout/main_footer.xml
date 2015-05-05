@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?> 
+   
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:background="@drawable/repeat_bk" >
+        
+    <TableRow
+        android:gravity="center_vertical" >
+    <ImageButton
+        android:id="@+id/main_imgbtnSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imgbtn_setup"
+        android:background="@drawable/line"
+        android:contentDescription="@string/app_name" />
+    
+    <ImageButton
+        android:id="@+id/main_imgbtnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imgbtn_exit"
+        android:background="@null"
+        android:contentDescription="@string/app_name" />
+    
+    </TableRow>   
+    
+    </TableLayout>

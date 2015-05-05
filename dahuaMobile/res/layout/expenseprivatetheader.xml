@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <!-- 中间开始 -->    
+    <ScrollView
+         android:id="@+id/expenseprivatetheader_ScrollView"
+         android:layout_width="fill_parent"  
+         android:layout_height="wrap_content"
+         android:fadingEdge="vertical"
+         android:background="@null" >
+	     <LinearLayout
+	         android:id="@+id/expenseprivatetheader_LinearLayout"
+	         android:layout_width="fill_parent"  
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical" >
+	         
+		     <!-- 单据编码 -->
+		     <RelativeLayout 
+		         android:layout_width="fill_parent"  
+		         android:layout_height="wrap_content"
+		         android:paddingTop="5dip"
+		         android:paddingBottom="5dip"
+		         android:paddingLeft="20dip"
+		         android:paddingRight="20dip" 
+		         android:background="@drawable/linegraye5_bottom"
+		         android:gravity="center_vertical">
+		                  
+		        <TextView
+		            android:id="@+id/expenseprivatetheader_No" 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="@string/engineering_No"
+		            style="@style/icons" />
+		        <TextView
+		            android:id="@+id/expenseprivatetheader_FBillNo" 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@+id/expenseprivatetheader_No"
+		            android:layout_centerVertical="true"
+		            android:text=""
+		            style="@style/icons" />                 
+		     </RelativeLayout>
+	    
+		     <!-- 报销人名称和提单日期 -->
+		     <TableLayout
+		         android:layout_width="fill_parent"  
+		         android:layout_height="wrap_content"
+		         android:background="@drawable/linegray_bottom"
+		         android:stretchColumns="*"  >
+		        <TableRow
+		         android:paddingTop="10dip"
+		         android:paddingBottom="10dip"
+		         android:gravity="center_vertical" >
+		         <TextView
+		            android:id="@+id/expenseprivatetheader_FConSmName"
+		            android:layout_width="1dip"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="20dip"
+		            android:drawableLeft="@drawable/user"
+		            android:text=""
+		            style="@style/icons"/>   
+		         <TextView
+		            android:id="@+id/expenseprivatetheader_FCommitDate"
+		            android:layout_width="1dip"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="10dip"
+		            android:drawableLeft="@drawable/clock"
+		            android:text=""
+		            style="@style/icons"
+		            android:background="@drawable/linegray_left"  />   
+		        </TableRow>
+		     </TableLayout>
+	    
+		     <!-- 金额明细 -->
+		     <RelativeLayout  
+		         android:layout_width="fill_parent"  
+		         android:layout_height="wrap_content"
+		         android:paddingTop="0dip"
+		         android:paddingBottom="0dip"
+		         android:paddingLeft="20dip"
+		         android:paddingRight="20dip" 
+		         android:background="@drawable/linegraye5_bottom"
+		         android:gravity="center_vertical">
+		        <TextView
+		            android:id="@+id/expenseprivatetheader_bill" 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:text="@string/expenseprivatetheader_bill"
+		            style="@style/icons" />		            
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		         
+		            android:layout_toLeftOf="@+id/expenseprivatetheader_FConSmAmountAll"
+		            android:text="@string/engineering_165"
+		            style="@style/iconsamount" />
+		        <TextView
+		            android:id="@+id/expenseprivatetheader_FConSmAmountAll" 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="20dip"
+		            android:text=""
+		            style="@style/iconsamount" />
+		     </RelativeLayout>
+	    </LinearLayout>
+    </ScrollView>    
+    <!-- 中间结束 -->    
+    
+</LinearLayout>

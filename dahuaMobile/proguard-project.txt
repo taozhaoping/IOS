@@ -1,0 +1,160 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-optimizationpasses 5                       #通过指定数量的优化能执行
+-repackageclasses ''
+-allowaccessmodification                    #优化时允许访问并修改有修饰符的类和类的成员
+-dontpreverify                              #不预校验
+
+-dontusemixedcaseclassnames                 #混淆时不会产生形形色色的类名 
+-dontskipnonpubliclibraryclasses            #指定不去忽略非公共的库类
+-dontskipnonpubliclibraryclassmembers       #指定不去忽略非公共的方法
+-verbose                                    #输出生成信息
+
+-optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/* #混淆采用的算法
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-dontnote com.android.vending.licensing.ILicensingService
+
+-keepattributes *Annotation*
+-keepattributes Signature
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public interface com.android.vending.licensing.ILicensingService
+
+# Preserve all native method names and the names of their classes.
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+-keepclasseswithmembernames class * {
+    native <methods>;  #所有native的方法不能去混淆
+    public <init>(android.content.Context);  
+    public <init>(android.content.Context, android.util.AttributeSet); #某些构造方法不能去混淆
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.content.Context {
+   public void *(android.view.View);
+   public void *(android.view.MenuItem);
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# Preserve static fields of inner classes of R classes that might be accessed
+# through introspection.
+-keepclassmembers class **.R$* {
+  public static <fields>;
+}
+
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+# Preserve the special static methods that are required in all enumeration classes.
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);  #枚举类不能去混淆.
+}
+
+# Preserve static fields of inner classes of R classes that might be accessed through introspection.
+-keep class * implements android.os.Parcelable {
+  static ** CREATOR;
+  public static final android.os.Parcelable$Creator *; #aidl文件不能去混淆.
+}
+
+-keep public class * {
+    public protected *;
+}
+
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+    !static !transient <fields>;
+    !private <fields>;
+    !private <methods>;
+}
+
+-dontwarn android.support.**
+
+#删除日志输出语句
+-assumenosideeffects class android.util.Log {
+    public static boolean isLoggable(java.lang.String, int);
+    public static int v(...);
+    public static int i(...);
+    public static int w(...);
+    public static int d(...);
+    public static int e(...);
+}
+
+##---------------Begin: proguard configuration for Gson  ----------
+-libraryjars   libs/gson-2.2.4.jar 
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.** { *; }
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.google.gson.examples.android.model.** { *; }
+
+##---------------保护  android.support.v4 jar 包  ----------
+-dontwarn android.support.v4.**  
+-keep class android.support.v4.** { *; }
+-keep interface android.support.v4.app.** { *; }
+-keep public class * extends android.support.v4.app.Fragment
+-keep public class * extends android.support.v4.app.FragmentActivity
+
+##---------------保护 ZXing.jar  ----------
+
+-libraryjars   libs/core-2.3.0.jar
+-keep class com.google.zxing.** {*;}
+-dontwarn  com.google.zxing.**
+
+##---------------保护高德地图  ----------
+-libraryjars   libs/AMap_3DMap_V2.3.1.jar
+-libraryjars   libs/Android_Location_V1.3.0.jar
+#3D 地图
+-keep   class com.amap.api.mapcore.**{*;} 
+-keep   class com.amap.api.maps.**{*;} 
+-keep   class com.autonavi.amap.mapcore.*{*;} 
+#Location
+-keep   class com.amap.api.location.**{*;} 
+-keep   class com.aps.**{*;} 
+
+-dontwarn com.amap.api.**
+-dontwarn com.aps.**
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#a5d0e8">
+    
+    <ImageView
+        android:layout_width="1.5dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="45dip"
+        android:src="@drawable/record_bk_repeat" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/record_bk_l" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/record_bk_ll" />
+    
+    <!-- 中间开始 -->    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="140dip"
+        android:layout_marginLeft="38dip"
+        android:background="#00000000" >
+
+        <ListView
+            android:id="@+id/attendance_list_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="vertical" > 
+        </ListView>
+    </RelativeLayout>
+    <!-- 中间结束 -->
+    
+
+</RelativeLayout>

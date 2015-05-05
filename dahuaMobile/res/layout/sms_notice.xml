@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/sms_notice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e9e9e9"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/sms_searchtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corners_bg_white" >
+
+            <EditText
+                android:id="@+id/sms_searchEditText"
+                style="@style/cot_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sms_invite_search"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:textColorHint="#aaaaaa" />
+
+            <ImageButton
+                android:id="@+id/sms_searchImageButton"
+                android:layout_width="60dip"
+                android:layout_height="22dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@null"
+                android:paddingLeft="30dip"
+                android:src="@drawable/btn_search" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/sms_Edittextborder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sms_notice"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:padding="1dip"
+        android:background="#5e5e5e" >
+	    <TextView
+	        android:id="@+id/sms_TextView"
+	        style="@style/icons"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="15dip"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="15dip"
+	        android:maxLines="7"
+	        android:lines="7"
+	        android:text="@string/sms_invite_text"
+	        android:background="#ffffff" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sms_Edittextborder"
+        android:paddingBottom="15dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="15dip" >
+
+        <Button
+            android:id="@+id/sms_Button"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/imgbtn_blue"
+            android:minHeight="0dip"
+            android:text="@string/sms_invite_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+  
+    <style name="CustomActionBarTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+    
+    <style name="MyActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="icon">@drawable/logo</item>
+        <item name="android:icon">@drawable/logo</item>
+        <item name="background" >@drawable/line_main_top</item>
+        <item name="android:background" >@drawable/line_main_top</item>
+        <item name="titleTextStyle" >@style/menu_title</item>   
+        <item name="android:titleTextStyle" >@style/menu_title</item>   
+    </style>
+    
+     <style name="SearchActionBarTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:icon">@android:color/transparent</item> 
+        <item name="searchAutoCompleteTextView">@style/searchTextView</item>
+    </style>
+    
+    <style name="searchTextView" parent="Widget.Sherlock.SearchAutoCompleteTextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+   
+</resources>

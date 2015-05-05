@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|right" 
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <!-- 顶部开始 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="19dip"
+        android:layout_marginRight="-5dip"
+        android:background="@drawable/linered" >                
+    </RelativeLayout> 
+    <!-- 顶部结束 -->
+    
+     <!-- 中间开始 -->    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="21dip"
+        android:background="#ffffff" >
+
+        <ListView
+            android:id="@+id/workflow_been_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:dividerHeight="0dip"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="vertical" > 
+        </ListView>
+    </RelativeLayout>
+    <!-- 中间结束 -->
+
+</RelativeLayout>

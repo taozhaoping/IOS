@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_share_items">
+        <item>我的任务</item>
+    </string-array>
+    
+    <!-- 消费类型 标签值 -->
+    <string-array name="expendtype_labels_array">
+        <item>差旅费</item>
+        <item>交际应酬费</item>
+    </string-array>
+    
+    <!-- 消费类型  实际值-->
+    <string-array name="expendtype_value_array">
+        <item>2006</item>
+        <item>2005</item>
+    </string-array>
+    
+    <!-- 差旅费 标签值-->
+    <string-array name="travel_labels_array">
+        <item>杭州市内办事交通费</item>
+        <item>公司小车及班车费(分摊)</item>
+        <item>飞机票</item>
+        <item>火车票</item>  
+        <item>汽车票</item>
+        <item>出差交通费</item>    
+        <item>住宿费</item>
+        <item>保险费</item>
+        <item>托运费</item>
+        <item>取款费</item>
+        <item>签证护照费</item>
+        <item>其他(差旅费)</item>
+        <item>外地住宿房租及物业</item>
+        <item>包干费(报销含车贴)</item>
+        <item>退票费</item>
+        <item>海外餐费</item>
+    </string-array>
+    
+    <!-- 差旅费 实际值-->
+    <string-array name="travel_value_array">
+        <item>2006.01</item>
+        <item>2006.02</item>
+        <item>2006.03</item>
+        <item>2006.04</item>  
+        <item>2006.05</item>
+        <item>2006.06</item>
+        <item>2006.07</item>
+        <item>2006.08</item>
+        <item>2006.09</item>
+        <item>2006.10</item>
+        <item>2006.11</item>
+        <item>2006.12</item>
+        <item>2006.13</item>
+        <item>2006.14</item>
+        <item>2006.15</item>
+        <item>2006.16</item>
+    </string-array>
+    
+    <!-- 交际应酬费 标签值-->
+    <string-array name="socialize_labels_array">
+        <item>餐费</item>
+        <item>旅游娱乐费</item>
+        <item>住宿交通费</item>
+        <item>拓展费</item>
+        <item>礼金</item>
+        <item>其他</item>
+    </string-array>
+    
+    <!-- 交际应酬费 实际值 -->
+    <string-array name="socialize_value_array">
+        <item>2005.01</item>
+        <item>2005.02</item>
+        <item>2005.03</item>
+        <item>2005.04</item>
+        <item>2005.05</item>
+        <item>2005.99</item>
+    </string-array>
+    
+    <!-- 出差地级别  标签值-->
+    <string-array name="businesslevel_labels_array">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>珠海</item>
+        <item>天津</item>
+        <item>重庆</item>
+		<item>石家庄</item>
+		<item>太原</item>
+		<item>呼和浩特</item>
+		<item>沈阳</item>
+		<item>大连</item>
+		<item>长春</item>
+		<item>哈尔滨</item>
+		<item>南京</item>
+		<item>杭州</item>
+		<item>宁波</item>
+		<item>合肥</item>
+		<item>福州</item>
+		<item>南昌</item>
+		<item>济南</item>
+		<item>青岛</item>
+		<item>郑州</item>
+		<item>武汉</item>
+		<item>长沙</item>
+		<item>南宁</item>
+		<item>海口</item>
+		<item>成都</item>
+		<item>贵阳</item>
+		<item>昆明</item> 
+		<item>厦门</item>
+		<item>西安</item>
+		<item>兰州</item>
+		<item>西宁</item>
+		<item>银川</item>
+		<item>乌鲁木齐</item>	
+		<item>拉萨</item>
+		<item>其他</item>
+		<item>常驻办事处</item>
+		<item>杭州出差</item>
+		<item>参加会议</item>
+		<item>区域提供住宿</item>
+		<item>住宿亲戚/朋友家</item>
+	    <item>参加会议培训，提供食宿</item>
+	    <item>回杭州总部</item>
+	    <item>供应商或客户提供住宿</item>
+	    <item>火车上过夜</item>
+    </string-array>
+    
+    <!-- 出差地级别  实际值-->
+    <string-array name="businesslevel_value_array">
+        <item>0101</item>
+        <item>0102</item>
+        <item>0103</item>
+        <item>0104</item>
+        <item>0105</item>
+        <item>0202</item>
+        <item>0203</item>
+        <item>0204</item>
+        <item>0205</item>
+        <item>0206</item>
+        <item>0207</item>
+        <item>0208</item>
+        <item>0209</item>
+        <item>0210</item>
+        <item>0211</item>
+        <item>0212</item>
+        <item>0213</item>
+        <item>0214</item>
+        <item>0215</item>
+        <item>0216</item>
+        <item>0217</item>
+        <item>0218</item>
+        <item>0219</item>
+        <item>0220</item>
+        <item>0221</item>
+        <item>0222</item>
+        <item>0223</item>
+        <item>0224</item>
+        <item>0225</item>
+        <item>0226</item> 
+        <item>0227</item>
+        <item>0228</item>
+        <item>0229</item>
+        <item>0230</item>
+        <item>0231</item>
+        <item>0232</item>   
+        <item>0233</item>
+        <item>0301</item>
+        <item>0401</item>
+        <item>0402</item>
+        <item>0403</item>
+        <item>0501</item>
+        <item>0502</item>
+        <item>0503</item>
+        <item>0504</item>
+        <item>0505</item>
+        <item>0506</item>
+    </string-array>
+
+    <!-- 未刷卡原因  标签值-->
+    <string-array name="nocard_labels_array">
+        <item>店家无刷卡机</item>
+        <item>信用卡暂未办理成功</item>
+        <item>信用卡额度不足</item>
+        <item>信用卡遗失</item>
+        <item>其他原因(填写说明)</item>
+    </string-array>
+    
+    <!-- 未刷卡原因  实际值-->
+    <string-array name="nocard_value_array">
+        <item>USC01</item>
+        <item>USC02</item>
+        <item>USC03</item>
+        <item>USC04</item>
+        <item>USC99</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linegray_bottom"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/contacts_item_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="0dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:stretchColumns="0" >
+        <TextView
+            android:id="@+id/contacts_item_FClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:onClick="dataClear"
+            android:clickable="true"
+            android:text=""
+            android:textColor="@color/contacts_switch"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

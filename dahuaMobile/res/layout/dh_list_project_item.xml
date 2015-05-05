@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/dh_list_project_item_FProjectName"
+        style="@style/calendar_item"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="30dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="25dip"
+        android:paddingRight="85dip"
+        android:paddingTop="5dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/dh_list_project_item_FHours"
+        style="@style/calendar_item"
+        android:layout_width="80dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="5dip"
+        android:text="" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/dh_list_item_icon" />
+
+</RelativeLayout>

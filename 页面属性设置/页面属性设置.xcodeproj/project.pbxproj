@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672839CA1AF85ADF00FBEFA7 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 672839C81AF85ADF00FBEFA7 /* CollectionView.m */; };
+		672839CB1AF85ADF00FBEFA7 /* CollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 672839C91AF85ADF00FBEFA7 /* CollectionView.xib */; };
 		67A370501AF083B20022AB61 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A3704F1AF083B20022AB61 /* Default-568h@2x.png */; };
 		9D6061561AEC6F0900950A15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6061551AEC6F0900950A15 /* main.m */; };
 		9D6061591AEC6F0900950A15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6061581AEC6F0900950A15 /* AppDelegate.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		672839C71AF85ADF00FBEFA7 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		672839C81AF85ADF00FBEFA7 /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		672839C91AF85ADF00FBEFA7 /* CollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionView.xib; sourceTree = "<group>"; };
 		67A3704F1AF083B20022AB61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D6061501AEC6F0900950A15 /* 页面属性设置.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "页面属性设置.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6061541AEC6F0900950A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +104,9 @@
 				9D6061601AEC6F0900950A15 /* Images.xcassets */,
 				9D6061621AEC6F0900950A15 /* LaunchScreen.xib */,
 				9D6061531AEC6F0900950A15 /* Supporting Files */,
+				672839C71AF85ADF00FBEFA7 /* CollectionView.h */,
+				672839C81AF85ADF00FBEFA7 /* CollectionView.m */,
+				672839C91AF85ADF00FBEFA7 /* CollectionView.xib */,
 			);
 			path = "页面属性设置";
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D60615F1AEC6F0900950A15 /* Main.storyboard in Resources */,
+				672839CB1AF85ADF00FBEFA7 /* CollectionView.xib in Resources */,
 				67A370501AF083B20022AB61 /* Default-568h@2x.png in Resources */,
 				9D6061641AEC6F0900950A15 /* LaunchScreen.xib in Resources */,
 				9D6061611AEC6F0900950A15 /* Images.xcassets in Resources */,
@@ -233,6 +242,7 @@
 			files = (
 				9D60615C1AEC6F0900950A15 /* ViewController.m in Sources */,
 				9D6061591AEC6F0900950A15 /* AppDelegate.m in Sources */,
+				672839CA1AF85ADF00FBEFA7 /* CollectionView.m in Sources */,
 				9D6061561AEC6F0900950A15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

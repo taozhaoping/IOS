@@ -69,6 +69,28 @@
     NSLog(@"对象的视图已经消失、被覆盖或是隐藏时调用");
 }
 
+-(void)viewWillLayoutSubviews
+{
+    NSLog(@"旋转之前");
+}
+
+-(void)viewDidLayoutSubviews
+{
+    NSLog(@"旋转之后");
+}
+
+-(BOOL)shouldAutorotate
+{
+    return [super shouldAutorotate];
+    //NSLog(@"不允许旋转");
+    //return false;
+}
+
+-(void)awakeFromNib
+{
+    NSLog(@"======");
+}
+
 -(PlayingCardGame*)game
 {
     if(!_game)

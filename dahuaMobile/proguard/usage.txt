@@ -1,0 +1,478 @@
+com.actionbarsherlock.app.SherlockFragmentActivity:
+    private static final java.lang.String TAG
+com.actionbarsherlock.internal.ActionBarSherlockCompat:
+    private static final java.lang.String PANELS_TAG
+com.actionbarsherlock.internal.ResourcesCompat:
+    private static final java.lang.String TAG
+com.actionbarsherlock.internal.app.ActionBarImpl:
+    private static final int CONTEXT_DISPLAY_NORMAL
+    private static final int CONTEXT_DISPLAY_SPLIT
+    private static final int INVALID_POSITION
+    java.lang.Runnable mTabSelector
+com.actionbarsherlock.internal.nineoldandroids.animation.AnimatorSet$Dependency:
+    static final int WITH
+    static final int AFTER
+com.actionbarsherlock.internal.nineoldandroids.animation.ObjectAnimator:
+    private static final boolean DBG
+com.actionbarsherlock.internal.nineoldandroids.animation.ValueAnimator:
+    private static final long DEFAULT_FRAME_DELAY
+    static final int ANIMATION_START
+    static final int ANIMATION_FRAME
+    static final int STOPPED
+    static final int RUNNING
+    static final int SEEKED
+com.actionbarsherlock.internal.view.menu.ActionMenuItem:
+    private static final int CHECKABLE
+    private static final int CHECKED
+    private static final int EXCLUSIVE
+    private static final int HIDDEN
+    private static final int ENABLED
+com.actionbarsherlock.internal.view.menu.ActionMenuPresenter$HasPermanentMenuKey:
+    128:128:private ActionMenuPresenter$HasPermanentMenuKey()
+com.actionbarsherlock.internal.view.menu.ActionMenuView:
+    static final int MIN_CELL_SIZE
+    static final int GENERATED_ITEM_PADDING
+com.actionbarsherlock.internal.view.menu.MenuBuilder:
+    private static final java.lang.String PRESENTER_KEY
+    private static final java.lang.String ACTION_VIEW_STATES_KEY
+    private static final java.lang.String EXPANDED_ACTION_VIEW_ID
+    1222:1223:void setOptionalIconsVisible(boolean)
+com.actionbarsherlock.internal.view.menu.MenuItemImpl:
+    private static final java.lang.String TAG
+    private static final int SHOW_AS_ACTION_MASK
+    private static final int CHECKABLE
+    private static final int CHECKED
+    private static final int EXCLUSIVE
+    private static final int HIDDEN
+    private static final int ENABLED
+    private static final int IS_ACTION
+    static final int NO_ICON
+    216:216:java.lang.Runnable getCallback()
+com.actionbarsherlock.internal.widget.AbsActionBarView:
+    private static final int FADE_DURATION
+com.actionbarsherlock.internal.widget.ActionBarContextView:
+    private static final int ANIMATE_IDLE
+    private static final int ANIMATE_IN
+    private static final int ANIMATE_OUT
+com.actionbarsherlock.internal.widget.ActionBarView:
+    private static final java.lang.String TAG
+    private static final int DISPLAY_RELAYOUT_MASK
+    private static final int DEFAULT_CUSTOM_GRAVITY
+com.actionbarsherlock.internal.widget.CapitalizingButton:
+    private static final int R_styleable_Button_textAppearance
+    private static final int R_styleable_TextAppearance_textAllCaps
+com.actionbarsherlock.internal.widget.CapitalizingTextView:
+    private static final int R_styleable_TextView_textAllCaps
+com.actionbarsherlock.internal.widget.IcsAdapterView:
+    static final int SYNC_SELECTED_POSITION
+    static final int SYNC_FIRST_POSITION
+    static final int SYNC_MAX_DURATION_MILLIS
+com.actionbarsherlock.internal.widget.IcsAdapterView$AdapterDataSetObserver:
+    807:808:public void clearSavedState()
+com.actionbarsherlock.internal.widget.IcsLinearLayout:
+    private static final int LinearLayout_divider
+    private static final int LinearLayout_showDividers
+    private static final int LinearLayout_dividerPadding
+com.actionbarsherlock.internal.widget.IcsListPopupWindow:
+    private static final int EXPAND_LIST_TIMEOUT
+com.actionbarsherlock.internal.widget.IcsProgressBar:
+    private static final int MAX_LEVEL
+    private static final int ANIMATION_RESOLUTION
+    private static final int TIMEOUT_SEND_ACCESSIBILITY_EVENT
+    private static final int ProgressBar_maxWidth
+    private static final int ProgressBar_maxHeight
+    private static final int ProgressBar_max
+    private static final int ProgressBar_progress
+    private static final int ProgressBar_secondaryProgress
+    private static final int ProgressBar_indeterminate
+    private static final int ProgressBar_indeterminateOnly
+    private static final int ProgressBar_indeterminateDrawable
+    private static final int ProgressBar_progressDrawable
+    private static final int ProgressBar_indeterminateDuration
+    private static final int ProgressBar_indeterminateBehavior
+    private static final int ProgressBar_minWidth
+    private static final int ProgressBar_minHeight
+    private static final int ProgressBar_interpolator
+    private static final int ProgressBar_animationResolution
+com.actionbarsherlock.internal.widget.IcsSpinner:
+    private static final int MAX_ITEMS_MEASURED
+com.actionbarsherlock.internal.widget.IcsToast:
+    private static final java.lang.String TAG
+com.actionbarsherlock.internal.widget.IcsView
+com.actionbarsherlock.internal.widget.ScrollingTabContainerView:
+    private static final int FADE_DURATION
+com.actionbarsherlock.internal.widget.TabsLinearLayout:
+    private static final int LinearLayout_measureWithLargestChild
+com.actionbarsherlock.view.MenuInflater:
+    private static final java.lang.String LOG_TAG
+    private static final java.lang.String XML_MENU
+    private static final java.lang.String XML_GROUP
+    private static final java.lang.String XML_ITEM
+    private static final int NO_ID
+com.actionbarsherlock.view.MenuInflater$MenuState:
+    private static final int defaultGroupId
+    private static final int defaultItemId
+    private static final int defaultItemCategory
+    private static final int defaultItemOrder
+    private static final int defaultItemCheckable
+    private static final boolean defaultItemChecked
+    private static final boolean defaultItemVisible
+    private static final boolean defaultItemEnabled
+com.actionbarsherlock.view.Window:
+    48:49:private Window(android.content.Context)
+com.actionbarsherlock.widget.ActivityChooserModel:
+    private static final boolean DEBUG
+    private static final java.lang.String TAG_HISTORICAL_RECORDS
+    private static final java.lang.String TAG_HISTORICAL_RECORD
+    private static final java.lang.String ATTRIBUTE_ACTIVITY
+    private static final java.lang.String ATTRIBUTE_TIME
+    private static final java.lang.String ATTRIBUTE_WEIGHT
+    public static final java.lang.String DEFAULT_HISTORY_FILE_NAME
+    public static final int DEFAULT_HISTORY_MAX_LENGTH
+    private static final int DEFAULT_ACTIVITY_INFLATION
+    private static final float DEFAULT_HISTORICAL_RECORD_WEIGHT
+    private static final java.lang.String HISTORY_FILE_EXTENSION
+    private static final int INVALID_INDEX
+    387:387:public android.content.Intent getIntent()
+    599:606:public void setActivitySorter(com.actionbarsherlock.widget.ActivityChooserModel$ActivitySorter)
+    638:646:public void setHistoryMaxSize(int)
+    654:654:public int getHistoryMaxSize()
+com.actionbarsherlock.widget.ActivityChooserModel$DefaultSorter:
+    private static final float WEIGHT_DECAY_COEFFICIENT
+com.actionbarsherlock.widget.ActivityChooserView:
+    450:450:public com.actionbarsherlock.widget.ActivityChooserModel getDataModel()
+    459:460:public void setOnDismissListener(android.widget.PopupWindow$OnDismissListener)
+    471:472:public void setInitialActivityCount(int)
+com.actionbarsherlock.widget.ActivityChooserView$ActivityChooserViewAdapter:
+    public static final int MAX_ACTIVITY_COUNT_UNLIMITED
+    public static final int MAX_ACTIVITY_COUNT_DEFAULT
+    private static final int ITEM_VIEW_TYPE_ACTIVITY
+    private static final int ITEM_VIEW_TYPE_FOOTER
+    private static final int ITEM_VIEW_TYPE_COUNT
+com.actionbarsherlock.widget.ActivityChooserView$SetActivated:
+    627:627:private ActivityChooserView$SetActivated()
+com.actionbarsherlock.widget.SearchView:
+    private static final boolean DBG
+    private static final java.lang.String LOG_TAG
+    private static final java.lang.String IME_OPTION_NO_MICROPHONE
+com.actionbarsherlock.widget.ShareActionProvider:
+    private static final int DEFAULT_INITIAL_ACTIVITY_COUNT
+com.actionbarsherlock.widget.SuggestionsAdapter:
+    private static final boolean DBG
+    private static final java.lang.String LOG_TAG
+    private static final int QUERY_LIMIT
+    static final int REFINE_NONE
+    static final int REFINE_BY_ENTRY
+    static final int REFINE_ALL
+    static final int INVALID_INDEX
+    155:155:public int getQueryRefinement()
+    250:252:public void close()
+    690:701:private android.graphics.drawable.Drawable getActivityIconWithCache(android.content.ComponentName)
+    712:729:private android.graphics.drawable.Drawable getActivityIcon(android.content.ComponentName)
+com.dahuatech.app.AppConfig:
+    private static final java.lang.String APP_CONFIG
+com.dahuatech.app.AppContext:
+    private static final int CACHE_TIME
+    803:803:private boolean isReadDataCache(java.lang.String)
+com.dahuatech.app.AppException:
+    private static final boolean Debug
+    269:286:private boolean handleException(java.lang.Throwable)
+com.dahuatech.app.AppException$2
+com.dahuatech.app.AppGuide:
+    private static final int picsLength
+com.dahuatech.app.AppUrl:
+    private static final java.lang.String URL_SPLITTER
+    private static final java.lang.String URL_API_HOST
+    private static final java.lang.String ANDROID_SERVICE
+    private static final java.lang.String URL_API_HOST_ANDROID
+com.dahuatech.app.api.ApiClient:
+    private static final java.lang.String TAG
+com.dahuatech.app.bean.LogsRecordInfo$singletonHolder:
+    63:63:private LogsRecordInfo$singletonHolder()
+com.dahuatech.app.bean.RepositoryInfo$singletonHolder:
+    89:89:private RepositoryInfo$singletonHolder()
+com.dahuatech.app.bean.SqlParametersInfo$singletonHolder:
+    77:77:private SqlParametersInfo$singletonHolder()
+com.dahuatech.app.bean.UpdateInfo$singletonHolder:
+    54:54:private UpdateInfo$singletonHolder()
+com.dahuatech.app.bean.UserInfo$singletonHolder:
+    54:54:private UserInfo$singletonHolder()
+com.dahuatech.app.bean.attendance.AdAmapListInfo$SingletonHolder:
+    30:30:private AdAmapListInfo$SingletonHolder()
+com.dahuatech.app.bean.attendance.AdCheckInfo$SingletonHolder:
+    69:69:private AdCheckInfo$SingletonHolder()
+com.dahuatech.app.bean.attendance.AdCheckStatusInfo$SingletonHolder:
+    45:45:private AdCheckStatusInfo$SingletonHolder()
+com.dahuatech.app.bean.develophour.DHConfirmListPersonParamInfo$singletonHolder:
+    55:55:private DHConfirmListPersonParamInfo$singletonHolder()
+com.dahuatech.app.bean.develophour.DHConfirmParamInfo$singletonHolder:
+    41:41:private DHConfirmParamInfo$singletonHolder()
+com.dahuatech.app.bean.develophour.DHDetailInfo$SingletonHolder:
+    83:83:private DHDetailInfo$SingletonHolder()
+com.dahuatech.app.bean.develophour.DHDetailParamInfo$SingletonHolder:
+    48:48:private DHDetailParamInfo$SingletonHolder()
+com.dahuatech.app.bean.develophour.DHListParamInfo$singletonHolder:
+    41:41:private DHListParamInfo$singletonHolder()
+com.dahuatech.app.bean.develophour.DHProjectParamInfo$SingletonHolder:
+    46:46:private DHProjectParamInfo$SingletonHolder()
+com.dahuatech.app.bean.develophour.DHUploadConfirmInfo$SingletonHolder:
+    48:48:private DHUploadConfirmInfo$SingletonHolder()
+com.dahuatech.app.bean.expense.ExpenseFlowDetailInfo$singletonHolder:
+    245:245:private ExpenseFlowDetailInfo$singletonHolder()
+com.dahuatech.app.bean.expense.FlowParamInfo$singletonHolder:
+    55:55:private FlowParamInfo$singletonHolder()
+com.dahuatech.app.bean.expense.FlowSearchParamInfo$singletonHolder:
+    55:55:private FlowSearchParamInfo$singletonHolder()
+com.dahuatech.app.bean.market.MarketBidHistoryInfo$singletonHolder:
+    36:36:private MarketBidHistoryInfo$singletonHolder()
+com.dahuatech.app.bean.market.MarketContractHistoryInfo$singletonHolder:
+    36:36:private MarketContractHistoryInfo$singletonHolder()
+com.dahuatech.app.bean.market.MarketSearchParamInfo$singletonHolder:
+    47:47:private MarketSearchParamInfo$singletonHolder()
+com.dahuatech.app.bean.meeting.MeetingDetailInfo$singletonHolder:
+    145:145:private MeetingDetailInfo$singletonHolder()
+com.dahuatech.app.bean.meeting.MeetingInitParamInfo$singletonHolder:
+    64:64:private MeetingInitParamInfo$singletonHolder()
+com.dahuatech.app.bean.meeting.MeetingListParamInfo$singletonHolder:
+    41:41:private MeetingListParamInfo$singletonHolder()
+com.dahuatech.app.bean.meeting.MeetingSearchParamInfo$singletonHolder:
+    82:82:private MeetingSearchParamInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ApplyDaysOffDevelopInfo$singletonHolder:
+    100:100:private ApplyDaysOffDevelopInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ApplyDaysOffTHeaderInfo$singletonHolder:
+    62:62:private ApplyDaysOffTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ApplyLeaveTHeaderInfo$singletonHolder:
+    62:62:private ApplyLeaveTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ApplyOverTimeTHeaderInfo$singletonHolder:
+    71:71:private ApplyOverTimeTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ApplyResumeTHeaderInfo$singletonHolder:
+    62:62:private ApplyResumeTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ContributionAwardInfo$singletonHolder:
+    116:116:private ContributionAwardInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.DaHuaAssumeCostInfo$singletonHolder:
+    98:98:private DaHuaAssumeCostInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.DevelopInquiryTHeaderInfo$singletonHolder:
+    98:98:private DevelopInquiryTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.DevelopTestNetworkTHeaderInfo$singletonHolder:
+    98:98:private DevelopTestNetworkTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.DevelopTravelTHeaderInfo$singletonHolder:
+    138:138:private DevelopTravelTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.DocumentApproveTHeaderInfo$singletonHolder:
+    94:94:private DocumentApproveTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.DoorPermissionTHeaderInfo$singletonHolder:
+    87:87:private DoorPermissionTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.EmailOpenTHeaderInfo$singletonHolder:
+    87:87:private EmailOpenTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.EngineeringInfo$singletonHolder:
+    135:135:private EngineeringInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExAttendanceTHeaderInfo$singletonHolder:
+    62:62:private ExAttendanceTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpenseCostTHeaderInfo$singletonHolder:
+    107:107:private ExpenseCostTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpenseCostTypeInfo$singletonHolder:
+    44:44:private ExpenseCostTypeInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpenseMarketBidTHeaderInfo$singletonHolder:
+    116:116:private ExpenseMarketBidTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpenseMarketPayTHeaderInfo$singletonHolder:
+    98:98:private ExpenseMarketPayTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpensePrivateTBodyParam$singletonHolder:
+    47:47:private ExpensePrivateTBodyParam$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpensePrivateTHeaderInfo$singletonHolder:
+    81:81:private ExpensePrivateTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpensePublicTHeaderInfo$singletonHolder:
+    90:90:private ExpensePublicTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpenseSpecialTHeaderInfo$singletonHolder:
+    98:98:private ExpenseSpecialTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ExpenseSpecialThingHeaderInfo$singletonHolder:
+    101:101:private ExpenseSpecialThingHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.FeDestroyTHeaderInfo$singletonHolder:
+    88:88:private FeDestroyTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.FeEngravingTHeaderInfo$singletonHolder:
+    74:74:private FeEngravingTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.FeTakeOutTHeaderInfo$singletonHolder:
+    137:137:private FeTakeOutTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.FeTransferTHeaderInfo$singletonHolder:
+    102:102:private FeTransferTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.FeUpdateTHeaderInfo$singletonHolder:
+    88:88:private FeUpdateTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.FixedAssetsSpecialTHeaderInfo$singletonHolder:
+    89:89:private FixedAssetsSpecialTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.LowConsumableTHeaderInfo$singletonHolder:
+    81:81:private LowConsumableTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.LowerNodeAppConfigInfo$singletonHolder:
+    56:56:private LowerNodeAppConfigInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.LowerNodeAppItemInfo$singletonHolder:
+    32:32:private LowerNodeAppItemInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.MemRequreInfo$singletonHolder:
+    161:161:private MemRequreInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.NetworkPermissionTHeaderInfo$singletonHolder:
+    88:88:private NetworkPermissionTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.NewProductLibTHeaderInfo$singletonHolder:
+    95:95:private NewProductLibTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.NewProductReworkTHeaderInfo$singletonHolder:
+    102:102:private NewProductReworkTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.PlusCopyInfo$singletonHolder:
+    100:100:private PlusCopyInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.ProjectReadTHeaderInfo$singletonHolder:
+    95:95:private ProjectReadTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.PurchaseStockTHeaderInfo$singletonHolder:
+    88:88:private PurchaseStockTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.SvnPermissionTHeaderInfo$singletonHolder:
+    75:75:private SvnPermissionTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.TaskInfo$singletonHolder:
+    109:109:private TaskInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.TaskParamInfo$singletonHolder:
+    43:43:private TaskParamInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.TdBorrowTHeaderInfo$singletonHolder:
+    81:81:private TdBorrowTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.TdPermissionTHeaderInfo$singletonHolder:
+    102:102:private TdPermissionTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.TrainComputerTHeaderInfo$singletonHolder:
+    67:67:private TrainComputerTHeaderInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.TravelApprovalInfo$singletonHolder:
+    109:109:private TravelApprovalInfo$singletonHolder()
+com.dahuatech.app.bean.mytask.WorkFlowInfo$singletonHolder:
+    91:91:private WorkFlowInfo$singletonHolder()
+com.dahuatech.app.common.BitmapManager$BitmapManagerHolder:
+    55:55:private BitmapManager$BitmapManagerHolder()
+com.dahuatech.app.common.DateHelper:
+    private static final java.lang.String COMMON_DATE
+    private static final java.lang.String COMPARE_DATE
+com.dahuatech.app.common.FileUtils:
+    private static final java.lang.String TAG
+com.dahuatech.app.common.GsonHelper$SingletonHolder:
+    20:20:private GsonHelper$SingletonHolder()
+com.dahuatech.app.common.RegexpUtils:
+    private static final java.lang.String regxpForHtml
+com.dahuatech.app.common.UpdateManager:
+    private static final int DOWN_NOSDCARD
+    private static final int DOWN_UPDATE
+    private static final int DOWN_OVER
+    private static final int DIALOG_TYPE_LATEST
+    private static final int DIALOG_TYPE_FAIL
+com.dahuatech.app.common.UpdateManager$SingletonHolder:
+    115:115:private UpdateManager$SingletonHolder()
+com.dahuatech.app.common.ViewIdGenerator:
+    67:79:private static void hideSearchIcon(android.view.View)
+com.dahuatech.app.ui.attendance.AdCheckInActivity:
+    private static final java.lang.String GEOFENCE_BROADCAST_ACTION
+com.dahuatech.app.ui.barcode.CaptureActivity:
+    private static final float BEEP_VOLUME
+    private static final long VIBRATE_DURATION
+com.dahuatech.app.ui.develop.hour.DHProjectSearchActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.expense.flow.ExpenseClientSearchListActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.expense.flow.ExpenseFlowListActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.expense.flow.ExpenseProjectSearchListActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.expense.taxi.ExpenseTaxiListActivity:
+    private static final int ACTIVITY_ADD
+    private static final int ACTIVITY_ITEMVIEW
+com.dahuatech.app.ui.main.CommonMenu$SingletonHolder:
+    58:58:private CommonMenu$SingletonHolder()
+com.dahuatech.app.ui.main.MainActivity:
+    private java.util.Calendar cal
+    229:280:private java.lang.String showWelcome()
+com.dahuatech.app.ui.market.MarketBidSearchActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.market.MarketContractSearchActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.market.MarketProductSearchActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.meeting.MeetingListActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.meeting.MeetingPersonListActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.meeting.MeetingRoomListActivity:
+    private static final int fPageSize
+com.dahuatech.app.ui.service.AlarmBroadCast:
+    private static final java.lang.String TAG
+com.dahuatech.app.ui.service.NotificationShow:
+    private static final int NOTIFICATION_ID
+com.dahuatech.app.ui.task.AsyncTaskContext$singletonHolder:
+    36:36:private AsyncTaskContext$singletonHolder()
+com.dahuatech.app.ui.task.ExpenseSpecialThingHeaderActivity:
+    private android.widget.TextView fGeneralName
+com.dahuatech.app.ui.task.LowerNodeAppCheck$singletonHolder:
+    44:44:private LowerNodeAppCheck$singletonHolder()
+com.dahuatech.app.ui.task.LowerNodeApproveActivity:
+    private static final java.lang.String spinnerUserType
+    private static final java.lang.String spinnerRoleType
+com.dahuatech.app.widget.XListView:
+    private static final int SCROLLBACK_HEADER
+    private static final int SCROLLBACK_FOOTER
+    private static final int SCROLL_DURATION
+    private static final int PULL_LOAD_MORE_DELTA
+    private static final float OFFSET_RADIO
+com.handmark.pulltorefresh.library.OverscrollHelper:
+    static final java.lang.String LOG_TAG
+    static final float DEFAULT_OVERSCROLL_SCALE
+com.handmark.pulltorefresh.library.PullToRefreshBase:
+    static final boolean DEBUG
+    static final boolean USE_HW_LAYERS
+    static final java.lang.String LOG_TAG
+    static final float FRICTION
+    static final int DEMO_SCROLL_INTERVAL
+    static final java.lang.String STATE_STATE
+    static final java.lang.String STATE_MODE
+    static final java.lang.String STATE_CURRENT_MODE
+    static final java.lang.String STATE_SCROLLING_REFRESHING_ENABLED
+    static final java.lang.String STATE_SHOW_REFRESHING_VIEW
+    static final java.lang.String STATE_SUPER
+com.handmark.pulltorefresh.library.internal.FlipLoadingLayout:
+    static final int FLIP_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.IndicatorLayout:
+    static final int DEFAULT_ROTATION_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.LoadingLayout:
+    static final java.lang.String LOG_TAG
+com.handmark.pulltorefresh.library.internal.RotateLoadingLayout:
+    static final int ROTATION_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.Utils:
+    static final java.lang.String LOG_TAG
+com.handmark.pulltorefresh.library.internal.ViewCompat$SDK11:
+    49:49:ViewCompat$SDK11()
+com.handmark.pulltorefresh.library.internal.ViewCompat$SDK15:
+    57:57:ViewCompat$SDK15()
+com.jeremyfeinstein.slidingmenu.lib.CustomViewAbove:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int INVALID_POINTER
+    377:378:void smoothScrollTo(int,int)
+com.jeremyfeinstein.slidingmenu.lib.CustomViewBehind:
+    private static final java.lang.String TAG
+    private static final int MARGIN_THRESHOLD
+com.jeremyfeinstein.slidingmenu.lib.SlidingMenu$1:
+    public static final int POSITION_OPEN
+    public static final int POSITION_CLOSE
+    public static final int POSITION_SECONDARY_OPEN
+com.zxing.camera.AutoFocusManager:
+    private static final long AUTO_FOCUS_INTERVAL_MS
+com.zxing.camera.CameraConfigurationManager:
+    private static final java.lang.String TAG
+    private static final int MIN_PREVIEW_PIXELS
+    private static final int MAX_PREVIEW_PIXELS
+com.zxing.camera.CameraManager:
+    private static final int MIN_FRAME_WIDTH
+    private static final int MIN_FRAME_HEIGHT
+    private static final int MAX_FRAME_WIDTH
+    private static final int MAX_FRAME_HEIGHT
+com.zxing.camera.GingerbreadOpenCameraInterface:
+    private static final java.lang.String TAG
+com.zxing.decoding.InactivityTimer:
+    private static final long INACTIVITY_DELAY_MS
+com.zxing.executor.ResultHandler:
+    59:59:final android.app.Activity getActivity()
+    156:159:private static void putExtra(android.content.Intent,java.lang.String,java.lang.String)
+com.zxing.view.ViewfinderView:
+    private static final long ANIMATION_DELAY
+    private static final int OPAQUE
+    private static final int CORNER_WIDTH
+    private static final int L_WIDTH
+    private static final int MIDDLE_LINE_WIDTH
+    private static final int SPEEN_DISTANCE
+    private static final int MAX_RESULT_POINTS

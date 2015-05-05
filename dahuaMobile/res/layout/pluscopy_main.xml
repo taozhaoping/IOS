@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 中间结束 -->
+
+    <ScrollView
+        android:id="@+id/pluscopy_main_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pluscopy_main_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 添加节点 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/pluscopy_main_title"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/pluscopy_main_title" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pluscopy_main_checkBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip" >
+
+            </LinearLayout>
+
+            <!-- 加签人员 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/pluscopy_main_FPlus"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/pluscopy_main_plus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip" >
+                
+                <TextView
+                    android:id="@+id/pluscopy_main_FItemNumbers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/pluscopy_main_FItemNames"
+                    style="@style/icons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/pluscopy_main_FItemNumbers_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:src="@drawable/btn_search" />
+            </RelativeLayout>
+
+            <!-- 消息内容 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/pluscopy_main_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip" >
+
+                <EditText
+                    android:id="@+id/pluscopy_main_FContent"
+                    style="@style/icons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:inputType="text"
+                    android:cursorVisible="false"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/pluscopy_main_FContent_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:src="@drawable/btn_input" />
+            </RelativeLayout>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+		        android:background="#ffffff"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip"
+		        android:paddingLeft="30dip"         
+		        android:paddingRight="30dip"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical" >
+
+                    <Button
+                     android:id="@+id/pluscopy_main_FConfirm"
+	                 android:layout_width="wrap_content"  
+	                 android:layout_height="wrap_content"
+				     android:layout_marginRight="25dip"
+	                 android:minHeight="0dip"                      
+	                 android:text="@string/pluscopy_main_fConfirm"
+	                 android:background="@drawable/imgbtn_blue"
+	                 style="@style/button_text" />
+
+                    <Button
+                     android:id="@+id/pluscopy_main_FCancle"
+	                 android:layout_width="wrap_content"  
+	                 android:layout_height="wrap_content"
+				     android:layout_marginLeft="25dip"
+	                 android:minHeight="0dip"
+	                 android:text="@string/pluscopy_main_fCancle"
+	                 android:background="@drawable/imgbtn_blue"
+	                 style="@style/button_text" />
+                </TableRow>
+            </TableLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

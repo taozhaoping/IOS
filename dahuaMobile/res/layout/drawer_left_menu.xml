@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_left_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343539" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="20dip"
+	        android:src="@drawable/head"/>
+
+	    <Button
+	        android:id="@+id/drawer_left_menu_setting"
+	        style="@style/sidebar_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/sidebar_setting"
+            android:background="@drawable/sidebarbutton"
+	        android:text="@string/menu_appSetting" />
+	    
+	    <Button
+	        android:id="@+id/drawer_left_menu_back"
+	        style="@style/sidebar_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/sidebar_home"
+            android:background="@drawable/sidebarbutton"
+	        android:text="@string/menu_appBack" />
+	    
+	    <Button
+	        android:id="@+id/drawer_left_menu_invite"
+	        style="@style/sidebar_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/sidebar_friends"
+            android:background="@drawable/sidebarbutton"
+	        android:text="@string/sms_invite_title" />
+	    
+	    <Button
+	        android:id="@+id/drawer_left_menu_exit"
+	        style="@style/sidebar_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:drawableLeft="@drawable/sidebar_exit"
+            android:background="@drawable/sidebarbutton"
+	        android:text="@string/menu_appExit" />
+    </LinearLayout>
+
+</FrameLayout>

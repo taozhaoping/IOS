@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:id="@+id/expensecosttheader_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/expensecosttheader_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 单据编码 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"  
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/expensecosttheader_No"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/engineering_No" />
+
+                <TextView
+                    android:id="@+id/expensecosttheader_FBillNo"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/expensecosttheader_No"
+                    android:text="" />
+            </RelativeLayout>
+
+            <!-- 报销人名称和提单日期 -->
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/expensecosttheader_FConSmName"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user"
+                        android:paddingLeft="20dip"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/expensecosttheader_FCommitDate"
+                        style="@style/icons"
+                        android:layout_width="1dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linegray_left"
+                        android:drawableLeft="@drawable/clock"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- 申请类型 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegraye5_bottom"
+                android:gravity="center_vertical"  
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/expensecosttheader_GeneralName"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/expensecosttheader_FGeneralName" />
+
+                <TextView
+                    android:id="@+id/expensecosttheader_FGeneralName"
+                    style="@style/icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/expensecosttheader_GeneralName"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linegray_bottom"     
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip" >
+
+                <TableLayout
+                    android:id="@+id/expensecosttheader_tb1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:stretchColumns="2" >
+
+                    <TableRow>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-5dip" >
+
+                            <TextView
+                                android:id="@+id/expensecosttheader_AppAmt"
+                                style="@style/iconstext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="-5dip"
+                                android:drawableLeft="@drawable/amount_2014"
+                                android:text="@string/expensecosttheader_FAppAmt" />
+
+                            <TextView
+                                android:id="@+id/expensecosttheader_165_1"
+                                style="@style/iconsamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dip"
+                                android:layout_toRightOf="@+id/expensecosttheader_AppAmt"
+                                android:text="@string/engineering_165" />
+
+                            <TextView
+                                android:id="@+id/expensecosttheader_FAppAmt"
+                                style="@style/iconsamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"     
+                                android:layout_marginTop="5dip"
+                                android:layout_toRightOf="@+id/expensecosttheader_165_1"
+                                android:text="" />
+                        </RelativeLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/expensecosttheader_tb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/expensecosttheader_tb1"
+                    android:orientation="vertical"
+                    android:stretchColumns="2" >
+
+                    <TableRow>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dip" >
+
+                            <TextView
+                                android:id="@+id/expensecosttheader_LDAmt"
+                                style="@style/iconstext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="-5dip"
+                                android:drawableLeft="@drawable/amount_2014"
+                                android:text="@string/expensecosttheader_FLDAmt" />
+
+                            <TextView
+                                android:id="@+id/expensecosttheader_165_2"
+                                style="@style/iconsamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"                              
+                                android:layout_marginTop="5dip"
+                                android:layout_toRightOf="@+id/expensecosttheader_LDAmt"
+                                android:text="@string/engineering_165" />
+
+                            <TextView
+                                android:id="@+id/expensecosttheader_FLDAmt"
+                                style="@style/iconsamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-3dip"
+                                android:layout_marginTop="5dip"
+                                android:layout_toRightOf="@+id/expensecosttheader_165_2"
+                                android:text="" />
+                        </RelativeLayout>
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

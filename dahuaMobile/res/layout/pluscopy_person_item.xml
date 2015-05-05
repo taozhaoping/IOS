@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/pluscopy_person_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="5dip"
+        android:paddingTop="10dip" 
+        android:stretchColumns="0">
+        
+        <TextView
+            android:id="@+id/pluscopy_person_item_FItemNumber"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minHeight="0dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/number_bk"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/pluscopy_person_item_FItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pluscopy_person_item_FItemNumber"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:clickable="true"
+            android:text=""
+            android:onClick="onFItemNameClick"
+            android:textColor="@color/contacts_switch"
+            android:textSize="22sp" />
+        
+        <CheckBox
+            android:id="@+id/pluscopy_person_item_chkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-10dip" 
+            android:textSize="14sp"
+            style="@style/CheckBox"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+      
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/full_transparent"
+    android:orientation="vertical" >
+       
+       <LinearLayout
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+            android:orientation="vertical" 
+	        android:background="#ffffff" >
+    
+       <TextView
+	        android:id="@+id/delslide_actionsheet_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#343539"
+	        android:gravity="center"
+	        android:padding="20dip"
+	        android:layout_marginBottom="10dip"
+	        android:text="@string/delSlide_title"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp" />
+       
+        <TextView
+	        android:id="@+id/delslide_actionsheet_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:background="@drawable/btndel"
+	        android:gravity="center"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginBottom="0dip"
+	        android:text="@string/delSlide_delete"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp" />
+        
+        <TextView
+	        android:id="@+id/delslide_actionsheet_cancel"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btncancel"
+	        android:gravity="center"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginBottom="10dip"
+	        android:text="@string/delSlide_cancel"
+	        android:textColor="#5e5e5e"
+	        android:textSize="16sp" />
+        </LinearLayout>
+
+</LinearLayout>

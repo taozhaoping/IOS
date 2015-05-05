@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"  >
+        
+        <TableRow
+            android:gravity="center_vertical" >
+    
+		    <Button
+		        android:id="@+id/dh_main_detail"
+		        style="@style/main_icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/menubutton"
+		        android:clickable="true"
+		        android:drawableTop="@drawable/time_add"
+		        android:text="@string/dh_add" />
+		    
+		    <Button
+		        android:id="@+id/dh_main_list"
+		        style="@style/main_icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/menubutton"
+		        android:clickable="true"
+		        android:drawableTop="@drawable/time_list"
+		        android:text="@string/dh_list" />
+		    
+		    <Button
+		        android:id="@+id/dh_main_confirm_list"
+		        style="@style/main_icon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/menubutton"
+		        android:clickable="true"
+		        android:drawableTop="@drawable/time_confirm"
+		        android:text="@string/dh_confrim_list" />
+		   
+		 </TableRow>
+		 
+	</TableLayout>
+
+</LinearLayout>

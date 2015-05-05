@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e9e9e9"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corners_bg_white" >
+
+            <EditText
+                android:id="@+id/dh_project_searchEditText"
+                style="@style/cot_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dh_project_search_edit"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColorHint="#aaaaaa" />
+
+            <ImageButton
+                android:id="@+id/dh_project_searchImageButton"
+                android:layout_width="60dip"
+                android:layout_height="22dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@null"
+                android:paddingLeft="30dip"
+                android:src="@drawable/btn_search" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/dh_project_search_pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:drawSelectorOnTop="false"
+        android:scrollbars="vertical"
+        android:divider="@drawable/linegray_bottom"
+        android:dividerHeight="1dip">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

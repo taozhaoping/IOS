@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dahuatech.app.widget.DelSlideScrollLinerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/expense_taxilistlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingLeft="-20dip"
+        android:paddingRight="15dip"
+        android:paddingTop="8dip" 
+        android:background="@drawable/linegray_bottom" >
+        
+        <TextView
+            android:id="@+id/expense_taxilist_layout_endAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginBottom="5dip"
+            android:text=""
+            android:textColor="#8d979c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/expense_taxilist_layout_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_below="@+id/expense_taxilist_layout_endAddress"
+            android:text=""
+            android:textColor="#8d979c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/expense_taxilist_layout_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_taxilist_layout_startTime"
+            android:layout_marginLeft="5dip"
+            android:text=""
+            android:textColor="#8d979c"
+            android:textSize="14sp" />
+        
+         <CheckBox
+            android:id="@+id/expense_taxilist_layout_chkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dip"
+            android:text=""
+            android:textSize="14sp"
+            style="@style/CheckBox"
+            android:focusable="false"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/expense_taxilist_layout_deleteAction"
+        android:layout_width="@dimen/delete_action_len"
+        android:layout_height="80dip"
+        android:background="@drawable/btndel_selector"
+        android:drawableLeft="@drawable/pop_up_del"
+        android:gravity="center"
+        android:text="@string/delSlide_delete"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</com.dahuatech.app.widget.DelSlideScrollLinerLayout>
