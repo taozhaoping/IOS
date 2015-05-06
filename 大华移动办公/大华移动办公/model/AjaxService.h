@@ -10,5 +10,5 @@
 
 @interface AjaxService : NSObject
 
--(instancetype)initAjaxService : (NSString) url 
+-(instancetype)initAjaxService : (NSString*) url;
 @end
