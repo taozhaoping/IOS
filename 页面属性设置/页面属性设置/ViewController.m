@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestStatusViewController.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,26 @@
 @end
 
 @implementation ViewController
+
+-(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:@"bodyStats"])
+    {
+        NSLog(@"performSegueWithIdentifier:%@",identifier);
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"bodyStats"])
+    {
+        if([segue.destinationViewController isKindOfClass:[TestStatusViewController class]])
+         {
+             TestStatusViewController* testStatusViewController = (TestStatusViewController *)segue.destinationViewController;
+             testStatusViewController.testToAnalyze = self.lineBody.textStorage;
+         }
+    }
+}
 
 -(void)viewDidLoad
 {

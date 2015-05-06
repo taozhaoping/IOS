@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TestStatusViewController : UIViewController
+@property (nonatomic,strong) NSAttributedString* testToAnalyze;
 
 @end

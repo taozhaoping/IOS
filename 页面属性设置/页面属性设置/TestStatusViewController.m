@@ -10,18 +10,11 @@
 
 @interface TestStatusViewController ()
 
-@property (nonatomic,strong) NSAttributedString* testToAnalyze;
 @property (weak, nonatomic) IBOutlet UILabel *charateWidthStatus;
 @property (weak, nonatomic) IBOutlet UILabel *charateColorStatus;
 @end
 
 @implementation TestStatusViewController
-
-
--(void)viewDidAppear:(BOOL)animated
-{
-    self.testToAnalyze = [[NSAttributedString alloc] initWithString:@"sdjfksjfksfjsdkfjdsk"];
-}
 
 -(void)setTestToAnalyze:(NSAttributedString *)testToAnalyze
 {
@@ -59,7 +52,7 @@
     NSAttributedString* charateWidth = [self charaterWithAttributed:NSStrokeWidthAttributeName];
     NSAttributedString* charateColor = [self charaterWithAttributed:NSForegroundColorAttributeName];
     
-     self.charateWidthStatus.text = [NSString stringWithFormat:@"%zi:颜色的字符串",[charateWidth length]];
+     self.charateWidthStatus.text = [NSString stringWithFormat:@"%zi:描边的字符串",[charateWidth length]];
     self.charateColorStatus.text = [NSString stringWithFormat:@"%zi:颜色的字符串", [charateColor length]];
                                     
 }
