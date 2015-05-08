@@ -142,6 +142,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jTb-MG-HZb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HUy-qK-ulg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登陆成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTc-U2-TUY">
@@ -174,7 +175,6 @@
         <!--Navigation Controller-->
         <scene sceneID="rsK-Ip-bDi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TAh-uk-YRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CWO-E5-86l" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" tag="1" contentMode="scaleToFill" id="KUG-c2-fWb">
@@ -192,12 +192,13 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="czH-Jd-EAp"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAh-uk-YRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="706.5" y="473"/>
         </scene>
     </scenes>
     <resources>
         <image name="checkbox_back" width="50" height="72"/>
-        <image name="lock_line" width="30" height="30"/>
+        <image name="lock_line" width="18" height="30"/>
     </resources>
 </document>

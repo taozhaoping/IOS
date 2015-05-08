@@ -18,6 +18,7 @@
 		67EE82221AF9C26F00F04CAF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE82211AF9C26F00F04CAF /* LoginViewController.m */; };
 		67EE82251AF9E0E300F04CAF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE82241AF9E0E300F04CAF /* BaseViewController.m */; };
 		67EE822D1AF9FCAA00F04CAF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE822C1AF9FCAA00F04CAF /* MainViewController.m */; };
+		67EE82531AFB3E3600F04CAF /* DESUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE82521AFB3E3600F04CAF /* DESUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		67EE82241AF9E0E300F04CAF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ViewController/base/BaseViewController.m; sourceTree = "<group>"; };
 		67EE822B1AF9FCAA00F04CAF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewController/MainViewController.h; sourceTree = "<group>"; };
 		67EE822C1AF9FCAA00F04CAF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewController/MainViewController.m; sourceTree = "<group>"; };
+		67EE82511AFB3E3600F04CAF /* DESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESUtil.h; sourceTree = "<group>"; };
+		67EE82521AFB3E3600F04CAF /* DESUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 		67EE81F61AF9AFD900F04CAF /* 移动办公 */ = {
 			isa = PBXGroup;
 			children = (
+				67EE822E1AFB06C200F04CAF /* Util */,
 				67EE82261AF9E0EA00F04CAF /* ViewController */,
 				67EE81FB1AF9AFD900F04CAF /* AppDelegate.h */,
 				67EE81FC1AF9AFD900F04CAF /* AppDelegate.m */,
@@ -151,6 +155,15 @@
 				67EE82241AF9E0E300F04CAF /* BaseViewController.m */,
 			);
 			name = base;
+			sourceTree = "<group>";
+		};
+		67EE822E1AFB06C200F04CAF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				67EE82511AFB3E3600F04CAF /* DESUtil.h */,
+				67EE82521AFB3E3600F04CAF /* DESUtil.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 				67EE82031AF9AFD900F04CAF /* ViewController.m in Sources */,
 				67EE822D1AF9FCAA00F04CAF /* MainViewController.m in Sources */,
 				67EE81FA1AF9AFD900F04CAF /* main.m in Sources */,
+				67EE82531AFB3E3600F04CAF /* DESUtil.m in Sources */,
 				67EE82221AF9C26F00F04CAF /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +468,7 @@
 				67EE821C1AF9AFDA00F04CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67EE821D1AF9AFDA00F04CAF /* Build configuration list for PBXNativeTarget "移动办公Tests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +477,7 @@
 				67EE821F1AF9AFDA00F04CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

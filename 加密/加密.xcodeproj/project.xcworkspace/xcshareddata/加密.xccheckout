@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>97BDCC54-F356-4CCB-88E8-2FFA68EF64BD</string>
+	<string>97D78BBF-2B17-421A-98CF-897DC28BE246</string>
 	<key>IDESourceControlProjectName</key>
-	<string>移动办公</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>ECCBEF45F632F0533EC4FDB47AC2B68087C0D533</key>
 		<string>https://github.com/taozhaoping/IOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>移动办公/移动办公.xcodeproj</string>
+	<string>加密/加密.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ECCBEF45F632F0533EC4FDB47AC2B68087C0D533</key>
