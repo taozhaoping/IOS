@@ -33,7 +33,7 @@
     NSMutableString *str1 = [NSMutableString stringWithString:str];
     [DESUtil reformatSpecialCharacters:str1];
     NSString *rt = [DESUtil doCipher:str1 key:key context:kCCDecrypt];
-   rt =  [rt stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    rt =  [rt stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     return rt;
 }
 
@@ -217,7 +217,7 @@
                context:(CCOperation)encryptOrDecrypt {
     NSStringEncoding EnC = NSUTF8StringEncoding;
     
-    NSMutableData* dTextIn = [[sTextIn dataUsingEncoding:NSUTF8StringEncoding] mutableCopy];
+    NSMutableData *dTextIn;
     if (encryptOrDecrypt == kCCDecrypt) {
         //dTextIn = [[DESUtil decodeBase64WithString:sTextIn] mutableCopy];
         int j=0;
@@ -230,6 +230,7 @@
                 int_ch1 = (hex_char1-48)*16; //// 0 的Ascll - 48
             else if (hex_char1 >= 'A' && hex_char1 <='F')
                 int_ch1 = (hex_char1-55)*16; //// A 的Ascll - 65
+            
             else
                 int_ch1 = (hex_char1-87)*16; //// a 的Ascll - 97
             i++;
@@ -251,6 +252,8 @@
     else{
         dTextIn = [[sTextIn dataUsingEncoding: EnC] mutableCopy];
     }
+    
+    
     NSMutableData * dKey = [[sKey dataUsingEncoding:EnC] mutableCopy];
     [dKey setLength:kCCBlockSizeDES];
     uint8_t *bufferPtr1 = NULL;
@@ -293,7 +296,7 @@
             NSString* newHexStr = [NSString stringWithFormat:@"%x",testByte[i]&0xff];///16进制数
             if ([newHexStr length]==1)
             {
-            
+                
                 te = [[te stringByAppendingString:[NSString stringWithFormat:@"0%@",newHexStr]] mutableCopy];
             }else{
                 te = [[te stringByAppendingString:[NSString stringWithFormat:@"%@",newHexStr]] mutableCopy];
