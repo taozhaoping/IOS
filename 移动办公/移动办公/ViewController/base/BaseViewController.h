@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SVProgressHUD.h"
 
 @interface BaseViewController : UIViewController
 
@@ -30,4 +30,20 @@
 
 #pragma mark 获取指定KEY的配置信息
 -(NSString *)QueryNSUserDefToKey:(NSString *)key;
+
+
+#pragma mark - 提示框HUD
+- (IBAction)show:(id)sender ;
+
+- (IBAction)showText:(id)sender;
+
+- (IBAction)showprogress:(id)sender;
+
+- (void)increateProgress;
+
+- (IBAction)dismiss:(id)sender;
+
+- (IBAction)showSuccess:(id)sender;
+
+- (IBAction)showError:(NSString* )errorMessage;
 @end

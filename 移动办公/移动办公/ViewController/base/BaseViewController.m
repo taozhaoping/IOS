@@ -53,6 +53,51 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)show:(id)sender {
+    //  [SVProgressHUD show];
+    //SVProgressHUDMaskType 设置显示的样式
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    [self performSelector:@selector(dismiss:) withObject:nil afterDelay:3];
+}
+
+- (IBAction)showText:(id)sender {
+    [SVProgressHUD showWithStatus:@"加载中，请稍后。。。"];
+    [self performSelector:@selector(dismiss:) withObject:nil afterDelay:3];
+}
+
+- (IBAction)showprogress:(id)sender {
+    [SVProgressHUD showProgress:0 status:@"加载中"];
+    [self performSelector:@selector(increateProgress) withObject:nil afterDelay:0.3];
+}
+
+
+static float progressValue = 0.0f;
+- (void)increateProgress
+{
+    progressValue += 0.1;
+    [SVProgressHUD showProgress:progressValue status:@"加载中"];
+    if (progressValue < 1) {
+        [self performSelector:@selector(increateProgress) withObject:nil afterDelay:0.3];
+    }else{
+        [self performSelector:@selector(dismiss:) withObject:nil afterDelay:0.4];
+    }
+    
+}
+
+- (IBAction)dismiss:(id)sender {
+    [SVProgressHUD dismiss];
+}
+
+- (IBAction)showSuccess:(id)sender {
+    [SVProgressHUD showSuccessWithStatus:@"success"];
+    [self performSelector:@selector(dismiss:) withObject:nil afterDelay:3];
+}
+
+- (IBAction)showError:(NSString* )errorMessage {
+    [SVProgressHUD showErrorWithStatus:errorMessage];
+    [self performSelector:@selector(dismiss:) withObject:nil afterDelay:3];
+}
+
 /*
 #pragma mark - Navigation
 
