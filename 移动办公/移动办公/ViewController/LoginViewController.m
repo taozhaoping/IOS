@@ -37,7 +37,6 @@
 #pragma mark - matchs
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _userNameLable.delegate = self;
     
 }
 
@@ -48,29 +47,6 @@
     [_userPasswordLable setSecureTextEntry:YES];
     //[self NSUserDefAddObject:@"26078" key:@"userId"];
 }
-
-#define IsIOS7 ([[[[UIDevice currentDevice] systemVersion] substringToIndex:1] intValue]>=7)
-//  动画时间
-#define ANI_TIME 0.35f
-//  nav高
-#define NAV_HEIGHT (IsIOS7?64:44)
-#define SECREEN_SIZE [UIScreen mainScreen].bounds.size
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    [UIView animateWithDuration:ANI_TIME animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-        self.view.frame = CGRectMake(0, -40, SECREEN_SIZE.width, SECREEN_SIZE.height - NAV_HEIGHT);
-    }];
-}
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    [UIView animateWithDuration:ANI_TIME animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-        self.view.frame = CGRectMake(0, NAV_HEIGHT, SECREEN_SIZE.width, SECREEN_SIZE.height - NAV_HEIGHT);
-    }];
-}
-
 
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
@@ -128,6 +104,7 @@
 }
 
 - (IBAction)login:(UIButton *)sender {
+    [self.view endEditing:YES];
     [self showText:sender];
 }
 
