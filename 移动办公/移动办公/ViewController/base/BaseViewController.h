@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "SVProgressHUD.h"
 #import "ServiceUtil.h"
+#import "PushViewDelegate.h"
 
-@interface BaseViewController : UIViewController
+@interface BaseViewController :UIViewController<PushViewDelegate>
 
 #pragma mark - 变量声明
 @property (nonatomic,strong,readonly) NSString* userId;

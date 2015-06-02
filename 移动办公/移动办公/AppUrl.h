@@ -10,7 +10,7 @@
 
 #define _POST_ @"POST";
 
-#define _HOST_ @"10.18.106.83:8010"
+#define _HOST_ @"10.18.106.84:8010"
 
 #define _HTTP_ @"http://"
 
@@ -33,6 +33,9 @@
 
 #pragma mark 用户登录
 #define _LOGINACTIVITY_ @"LoginVerify"
+
+#pragma mark 通讯录
+#define _CONTACTSDATA_ @"GetContactsData"
 
 @interface AppUrl : NSObject
 

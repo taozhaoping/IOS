@@ -31,5 +31,8 @@
 #pragma mark 查询信息
 -(void)queryService:(BaseModel*)baseModel;
 
+#pragma mark 查询列表
+-(void)queryListService:(BaseModel*)baseModel;
+
 
 @end

@@ -10,6 +10,8 @@
 
 @interface BaseModel ()
 @property (nonatomic,readwrite,getter=IsComplete)BOOL complete;
+@property (nonatomic,copy,readwrite)NSString* errorCode;
+@property (nonatomic,copy,readwrite) NSString* errorMessage;
 @end
 
 @implementation BaseModel
@@ -19,6 +21,9 @@
 -(instancetype)initWithObject
 {
     self = [super init];
+    if (self) {
+        [self initParame];
+    }
     return self;
 }
 
@@ -27,12 +32,25 @@
     return [[self alloc]initWithObject];
 }
 
--(NSString*)urlMethod
+-(void)initParame
 {
-    if (!_urlMethod) {
-        _urlMethod = _LOGINACTIVITY_;
+    
+}
+
+-(NSString *)errorCode
+{
+    if (!_errorCode) {
+        _errorCode = [NSString stringWithFormat:@"%li",self.err.code ];
     }
-    return _urlMethod;
+    return _errorCode;
+}
+
+-(NSString*)errorMessage
+{
+    if (!_errorMessage) {
+        _errorMessage = [NSString stringWithFormat:@"%@",[self.err.userInfo objectForKey:@"NSLocalizedDescription"]];
+    }
+    return _errorMessage;
 }
 
 

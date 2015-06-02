@@ -90,17 +90,60 @@
     [baseModel beanForDictionary:dict];
 }
 
+-(void)queryListService:(BaseModel *)baseModel
+{
+    NSURL *url = [NSURL URLWithString:[self.http stringByAppendingString:baseModel.urlMethod]];
+    
+    [self.request setURL:url];
+    [self.request setHTTPMethod:self.httpMethod];
+    
+    NSData* json = nil;
+    //判断是传输对象字典还是传输查询文本
+    if([baseModel.searchText isEqualToString:@""])
+    {
+        json = [self ObjectForDesAndReturnData:[baseModel dictionaryForSearchBean]];
+    }else{
+        json = [self stringForDesAndReturnData:baseModel.searchText];
+    }
+    
+    NSString* len = [NSString stringWithFormat:@"%lu",[json length]];
+    
+    [self setRequestHead:self.request len:len];
+    
+    [self.request setHTTPBody:json];
+
+    // 创建不同步链接
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:self.request];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSString *html = operation.responseString;
+        NSData* data = [html dataUsingEncoding:NSUTF8StringEncoding];
+        [baseModel beanForDictionary:[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil]];
+        [baseModel.pushViewDelegate pushView];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        baseModel.err = error;
+        [baseModel.pushViewDelegate reultError:baseModel];
+    }];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    [queue addOperation:operation];
+
+    
+}
+
 #pragma mark 转换字典为字符串，并加密
 -(NSData*)ObjectForDesAndReturnData:(NSDictionary*) param
 {
-    NSData* data;
    
-    NSData *postDatas = nil;
-    
     //字典转换JSON字符串
-    postDatas = [NSJSONSerialization dataWithJSONObject:param options:NSJSONWritingPrettyPrinted error:nil];
+    NSData* postDatas = [NSJSONSerialization dataWithJSONObject:param options:NSJSONWritingPrettyPrinted error:nil];
     NSString *str = [[NSString alloc] initWithData:postDatas encoding:NSUTF8StringEncoding];
     
+    return [self stringForDesAndReturnData:str];
+}
+
+-(NSData*)stringForDesAndReturnData:(NSString*)str
+{
     //加密
     NSString* encodeData = [DESUtil encode:str];
     
@@ -108,9 +151,8 @@
     NSMutableDictionary* mudic = [[NSMutableDictionary alloc] init];
     [mudic setValue:encodeData forKey:@"jsonData"];
     
-    data = [NSJSONSerialization dataWithJSONObject:mudic options:NSJSONWritingPrettyPrinted error:nil];
-
-    return data;
+    return [NSJSONSerialization dataWithJSONObject:mudic options:NSJSONWritingPrettyPrinted error:nil];
+    
 }
 
 #pragma mark 这是头信息

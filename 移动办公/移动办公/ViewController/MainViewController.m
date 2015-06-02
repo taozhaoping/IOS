@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +24,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(ContactModel *)contactInfo
+{
+    if (!_contactInfo) {
+        _contactInfo = [ContactModel getInstance];
+        _contactInfo.pushViewDelegate = self;
+    }
+    return _contactInfo;
 }
-*/
+
+- (IBAction)onClick:(UIButton *)sender {
+    [self startLoad];
+    self.contactInfo.searchText = @"李娟";
+    [self.serviceUtil queryListService:self.contactInfo];
+
+}
+
+#pragma mark 开始刷新刷新
+-(void)pushView
+{
+    NSLog(@"%@",self.contactInfo.Result);
+    self.textView.text = self.contactInfo.Result;
+    NSLog(@"%s",__FUNCTION__);
+    [self endLoad];
+}
 
 @end

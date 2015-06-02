@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
+#import "ContactModel.h"
 
 @interface MainViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property(nonatomic,strong)ContactModel* contactInfo;
 @end

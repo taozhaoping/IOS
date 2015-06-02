@@ -45,6 +45,7 @@
 		67EE82251AF9E0E300F04CAF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE82241AF9E0E300F04CAF /* BaseViewController.m */; };
 		67EE822D1AF9FCAA00F04CAF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE822C1AF9FCAA00F04CAF /* MainViewController.m */; };
 		67EE82531AFB3E3600F04CAF /* DESUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE82521AFB3E3600F04CAF /* DESUtil.m */; };
+		9D71DC7B1B1D79190086BE4E /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D71DC7A1B1D79190086BE4E /* ContactModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,9 @@
 		67EE822C1AF9FCAA00F04CAF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewController/MainViewController.m; sourceTree = "<group>"; };
 		67EE82511AFB3E3600F04CAF /* DESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESUtil.h; sourceTree = "<group>"; };
 		67EE82521AFB3E3600F04CAF /* DESUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESUtil.m; sourceTree = "<group>"; };
+		9D71DC791B1D79190086BE4E /* ContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactModel.h; sourceTree = "<group>"; };
+		9D71DC7A1B1D79190086BE4E /* ContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactModel.m; sourceTree = "<group>"; };
+		9D71DC7D1B1D902A0086BE4E /* PushViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				6733C0ED1B0575FD00C5A64A /* AnalyticalDelegate.h */,
+				9D71DC7D1B1D902A0086BE4E /* PushViewDelegate.h */,
 			);
 			name = protocol;
 			sourceTree = "<group>";
@@ -230,6 +235,8 @@
 				6733C0EF1B05777600C5A64A /* BaseModel.h */,
 				6733C0F21B05846800C5A64A /* UserInfoModel.h */,
 				6733C0F31B05846800C5A64A /* UserInfoModel.m */,
+				9D71DC791B1D79190086BE4E /* ContactModel.h */,
+				9D71DC7A1B1D79190086BE4E /* ContactModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -469,6 +476,7 @@
 				6733C0C51B042D8800C5A64A /* AFHTTPRequestOperationManager.m in Sources */,
 				6733C0E31B042DA700C5A64A /* UIProgressView+AFNetworking.m in Sources */,
 				6733C0F61B05A39700C5A64A /* BaseModel.m in Sources */,
+				9D71DC7B1B1D79190086BE4E /* ContactModel.m in Sources */,
 				67EE822D1AF9FCAA00F04CAF /* MainViewController.m in Sources */,
 				6733C0E11B042DA700C5A64A /* UIButton+AFNetworking.m in Sources */,
 				6733C0CB1B042D8800C5A64A /* AFURLResponseSerialization.m in Sources */,

@@ -10,19 +10,15 @@
 
 @interface UserInfoModel ()
 
-@property(nonatomic,strong,readwrite) NSString* urlMethod;
 
 @end
 @implementation UserInfoModel
 
-@synthesize urlMethod = _urlMethod;
 
--(NSString*)urlMethod
+-(void)initParame
 {
-    if (!_urlMethod) {
-        _urlMethod = _LOGINACTIVITY_;
-    }
-    return _urlMethod;
+     self.urlMethod = _LOGINACTIVITY_;
+    self.sendSynchronous = true;
 }
 
 -(instancetype)initUserInfoModel:(NSString *)itemNumber password:(NSString *)password
@@ -31,11 +27,7 @@
     if (self) {
         self.fItemNumber = itemNumber;
         self.fPassword = password;
-        self.urlMethod = _LOGINACTIVITY_;
-        self.sendSynchronous = true;
     }
-    
-    
     return self;
 }
 

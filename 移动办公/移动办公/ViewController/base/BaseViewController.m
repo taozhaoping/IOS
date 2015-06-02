@@ -84,11 +84,11 @@ static float progressValue = 0.0f;
 {
     progressValue += 0.1;
     [SVProgressHUD showProgress:progressValue status:@"加载中"];
-    if (progressValue < 1) {
-        [self performSelector:@selector(increateProgress) withObject:nil afterDelay:0.3];
-    }else{
-        [self performSelector:@selector(dismiss:) withObject:nil afterDelay:0.4];
-    }
+//    if (progressValue < 1) {
+//        [self performSelector:@selector(increateProgress) withObject:nil afterDelay:0.3];
+//    }else{
+//        [self performSelector:@selector(dismiss:) withObject:nil afterDelay:0.4];
+//    }
     
 }
 
@@ -102,8 +102,30 @@ static float progressValue = 0.0f;
 }
 
 - (IBAction)showError:(NSString* )errorMessage {
-    [SVProgressHUD showErrorWithStatus:errorMessage];
+    [SVProgressHUD showImage:nil status:errorMessage];
     [self performSelector:@selector(dismiss:) withObject:nil afterDelay:3];
+}
+
+#pragma mark 开始加载
+-(void)startLoad
+{
+    //[self increateProgress];
+    NSLog(@"%s",__FUNCTION__);
+}
+
+#pragma mark 错误输出
+-(void)reultError:(BaseModel*)baseModel
+{
+    [self showError:baseModel.errorMessage];
+    NSLog(@"%s",__FUNCTION__);
+}
+
+
+#pragma mark 结束加载
+-(void)endLoad
+{
+    //[self dismiss:nil];
+     NSLog(@"%s",__FUNCTION__);
 }
 
 /*
