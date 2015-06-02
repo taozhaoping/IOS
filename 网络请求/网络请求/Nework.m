@@ -13,7 +13,7 @@
 
 //网络请求
 //NSString* kVideoURL = @"http://10.18.106.216:9090/GetAndroidDataService.svc/SoftCheckUpdate";
-NSString* kVideoURL = @"http://10.18.106.216:9090/GetAndroidDataService.svc/LoginVerify";
+NSString* kVideoURL = @"http://10.18.106.83:8010/GetAndroidDataService.svc/LoginVerify";
 
 //加密字符串
 NSString* data;

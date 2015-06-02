@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define _HOST_ @"10.18.106.216:9090"
+#define _POST_ @"POST";
+
+#define _HOST_ @"10.18.106.83:8010"
 
 #define _HTTP_ @"http://"
 

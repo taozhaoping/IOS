@@ -10,12 +10,20 @@
 
 @interface UserInfoModel ()
 
-@property (nonatomic,strong,readwrite) NSString* serviceMethod;
+@property(nonatomic,strong,readwrite) NSString* urlMethod;
 
 @end
 @implementation UserInfoModel
 
-@synthesize serviceMethod = _serviceMethod;
+@synthesize urlMethod = _urlMethod;
+
+-(NSString*)urlMethod
+{
+    if (!_urlMethod) {
+        _urlMethod = _LOGINACTIVITY_;
+    }
+    return _urlMethod;
+}
 
 -(instancetype)initUserInfoModel:(NSString *)itemNumber password:(NSString *)password
 {
@@ -23,7 +31,7 @@
     if (self) {
         self.fItemNumber = itemNumber;
         self.fPassword = password;
-        self.serviceMethod = _LOGINACTIVITY_;
+        self.urlMethod = _LOGINACTIVITY_;
         self.sendSynchronous = true;
     }
     
@@ -42,6 +50,12 @@
     return muDictionary;
 }
 
+-(NSDictionary*)dictionaryForSearchBean
+{
+    [self.searchDictionary setValue:self.fItemNumber forKey:@"FItemNumber"];
+    [self.searchDictionary setValue:self.fPassword forKey:@"FPassword"];
+    return self.searchDictionary;
+}
 
 
 

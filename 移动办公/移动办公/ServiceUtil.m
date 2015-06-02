@@ -20,18 +20,39 @@
 @synthesize request = _request;
 @synthesize afHttp = _afHttp;
 
+-(instancetype)initWithService
+{
+    self = [super init];
+    
+    return self;
+}
+
++(instancetype)getInstance
+{
+    return [[self alloc] initWithService];
+}
+
+/**服务器地址*/
 -(NSMutableString*)http
 {
-    if(_http)
+    if(!_http)
     {
-        _http = [NSString stringWithString:_URL_API_HOST_ANDROID_ ];
+        _http = [NSMutableString stringWithString:_URL_API_HOST_ANDROID_ ];
     }
     return _http;
 }
 
+-(NSString*)httpMethod
+{
+    if (!_httpMethod) {
+        _httpMethod = _POST_;
+    }
+    return _httpMethod;
+}
+
 -(NSMutableURLRequest*)request
 {
-    if(_request)
+    if(!_request)
     {
         _request = [[NSMutableURLRequest alloc] init];
     }
@@ -40,7 +61,7 @@
 
 -(AFHTTPRequestOperation*)afHttp
 {
-    if(_afHttp)
+    if(!_afHttp)
     {
         _afHttp = [[AFHTTPRequestOperation alloc] initWithRequest:self.request];
     }
@@ -48,16 +69,15 @@
     return _afHttp;
 }
 
--(NSDictionary*)queryService:(NSString*)serviceMethod
+-(void)queryService:(BaseModel<AnalyticalDelegate>*)baseModel
 {
-    NSMutableDictionary* dic = [[NSMutableDictionary alloc] init];
-    
-    NSURL *url = [NSURL URLWithString:[self.http stringByAppendingString:serviceMethod]];
+
+    NSURL *url = [NSURL URLWithString:[self.http stringByAppendingString:baseModel.urlMethod]];
     
     [self.request setURL:url];
     [self.request setHTTPMethod:self.httpMethod];
     
-    NSData* json = [self ObjectForDesAndReturnData:self.dictionary];
+    NSData* json = [self ObjectForDesAndReturnData:[baseModel dictionaryForSearchBean]];
     
     NSString* len = [NSString stringWithFormat:@"%lu",[json length]];
     
@@ -65,34 +85,9 @@
     
     [self.request setHTTPBody:json];
     // 创建同步链接
-//    NSData *reultData = [NSURLConnection sendSynchronousRequest:self.request returningResponse:nil error:nil];
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:self.request];
-    
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSString *html = operation.responseString;
-        NSData* data = [html dataUsingEncoding:NSUTF8StringEncoding];
-        _dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-        NSLog(@"发生错误！%@",error);
-        
-    }];
-    
-    return _dictionary;
-}
-
--(BOOL)updateService
-{
-    NSMutableDictionary* dic = [[NSMutableDictionary alloc] init];
-    
-    return dic;
-}
--(NSString*)downLoadFile
-{
-    NSMutableString* path = [[NSMutableString alloc] init];
-    
-    return path;
+    NSData *reultData = [NSURLConnection sendSynchronousRequest:self.request returningResponse:nil error:nil];
+   NSDictionary* dict = [NSJSONSerialization JSONObjectWithData:reultData options:NSJSONReadingMutableLeaves error:nil];
+    [baseModel beanForDictionary:dict];
 }
 
 #pragma mark 转换字典为字符串，并加密

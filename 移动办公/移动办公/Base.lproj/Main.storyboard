@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CWO-E5-86l">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -128,13 +129,11 @@
                                 <exclude reference="fpH-dD-tHH"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Mse-uO-DkX"/>
-                                <exclude reference="Pog-FB-5Fn"/>
-                                <exclude reference="Qtu-Cm-TFC"/>
-                                <exclude reference="cxX-Ap-6F3"/>
-                                <exclude reference="jhZ-wS-crB"/>
-                                <exclude reference="uHU-Mg-yUG"/>
-                                <exclude reference="v1G-Qe-Lg7"/>
+                                <exclude reference="JEl-IA-GAr"/>
+                                <exclude reference="btz-Ml-9SY"/>
+                                <exclude reference="jos-iQ-DNI"/>
+                                <exclude reference="kOv-b2-Lny"/>
+                                <exclude reference="o3D-7B-AWV"/>
                                 <exclude reference="4rp-5a-jLl"/>
                                 <exclude reference="4wt-nM-yX2"/>
                                 <exclude reference="KBG-qa-BeW"/>
@@ -145,12 +144,14 @@
                                 <exclude reference="xjc-Hr-vsy"/>
                                 <exclude reference="yPN-5b-lbP"/>
                                 <exclude reference="bua-V4-veD"/>
-                                <exclude reference="o3D-7B-AWV"/>
+                                <exclude reference="Mse-uO-DkX"/>
+                                <exclude reference="Pog-FB-5Fn"/>
+                                <exclude reference="Qtu-Cm-TFC"/>
+                                <exclude reference="cxX-Ap-6F3"/>
+                                <exclude reference="jhZ-wS-crB"/>
+                                <exclude reference="uHU-Mg-yUG"/>
+                                <exclude reference="v1G-Qe-Lg7"/>
                                 <exclude reference="LEi-vx-Yki"/>
-                                <exclude reference="JEl-IA-GAr"/>
-                                <exclude reference="btz-Ml-9SY"/>
-                                <exclude reference="jos-iQ-DNI"/>
-                                <exclude reference="kOv-b2-Lny"/>
                                 <exclude reference="Gom-uc-7Qs"/>
                             </mask>
                         </variation>
@@ -166,13 +167,11 @@
                                 <include reference="fpH-dD-tHH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Mse-uO-DkX"/>
-                                <include reference="Pog-FB-5Fn"/>
-                                <include reference="Qtu-Cm-TFC"/>
-                                <include reference="cxX-Ap-6F3"/>
-                                <include reference="jhZ-wS-crB"/>
-                                <include reference="uHU-Mg-yUG"/>
-                                <include reference="v1G-Qe-Lg7"/>
+                                <include reference="JEl-IA-GAr"/>
+                                <include reference="btz-Ml-9SY"/>
+                                <include reference="jos-iQ-DNI"/>
+                                <include reference="kOv-b2-Lny"/>
+                                <include reference="o3D-7B-AWV"/>
                                 <include reference="4rp-5a-jLl"/>
                                 <include reference="4wt-nM-yX2"/>
                                 <include reference="KBG-qa-BeW"/>
@@ -183,12 +182,14 @@
                                 <include reference="xjc-Hr-vsy"/>
                                 <include reference="yPN-5b-lbP"/>
                                 <include reference="bua-V4-veD"/>
-                                <include reference="o3D-7B-AWV"/>
+                                <include reference="Mse-uO-DkX"/>
+                                <include reference="Pog-FB-5Fn"/>
+                                <include reference="Qtu-Cm-TFC"/>
+                                <include reference="cxX-Ap-6F3"/>
+                                <include reference="jhZ-wS-crB"/>
+                                <include reference="uHU-Mg-yUG"/>
+                                <include reference="v1G-Qe-Lg7"/>
                                 <include reference="LEi-vx-Yki"/>
-                                <include reference="JEl-IA-GAr"/>
-                                <include reference="btz-Ml-9SY"/>
-                                <include reference="jos-iQ-DNI"/>
-                                <include reference="kOv-b2-Lny"/>
                                 <include reference="Gom-uc-7Qs"/>
                             </mask>
                         </variation>

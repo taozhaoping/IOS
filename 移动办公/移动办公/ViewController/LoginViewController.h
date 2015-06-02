@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "UserInfoModel.h"
+
 @interface LoginViewController : BaseViewController
+
+@property(nonatomic,strong)UserInfoModel* userInfo;
 
 @end

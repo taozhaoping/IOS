@@ -14,6 +14,14 @@
 
 @implementation BaseViewController
 
+-(ServiceUtil*)serviceUtil
+{
+    if (!_serviceUtil) {
+        _serviceUtil = [ServiceUtil getInstance];
+    }
+    return _serviceUtil;
+}
+
 -(NSUserDefaults *)userDef
 {
     if(!_userDef)

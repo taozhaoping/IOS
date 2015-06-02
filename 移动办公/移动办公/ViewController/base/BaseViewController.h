@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SVProgressHUD.h"
+#import "ServiceUtil.h"
 
 @interface BaseViewController : UIViewController
 
@@ -18,6 +19,8 @@
 @property (nonatomic,readonly,getter=isSaveUser) BOOL saveUser;
 @property (nonatomic,readonly,getter=isGesture) BOOL gesture;
 
+#pragma mark 网络请求接口
+@property(nonatomic,strong)ServiceUtil* serviceUtil;
 
 @property (nonatomic,strong) NSUserDefaults* userDef;
 

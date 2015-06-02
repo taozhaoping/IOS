@@ -54,17 +54,16 @@
     BOOL reult = false;
     userId = _userNameLable.text;
     userPassword = _userPasswordLable.text;
-    UserInfoModel* userInfo = [[UserInfoModel alloc] initUserInfoModel:userId password:userPassword];
-    [userInfo queryService];
+    self.userInfo.fItemNumber = userId;
+    self.userInfo.fPassword = userPassword;
+
+    [self.serviceUtil queryService:self.userInfo];
     //验证登陆信息
-    if (userInfo.isComplete) {
+    if (self.userInfo.IsComplete&&self.userInfo.IsSuccess) {
         [self dismiss:sender];
-        if(userInfo.isSuccess)
-        {
             reult = true;
-        }else{
-           [self showError:userInfo.errorMessage];
-        }
+    }else{
+        [self showError:self.userInfo.Result];
     }
     
     return reult;
@@ -116,6 +115,14 @@
 - (IBAction)changeSaveUser:(UIButton *)sender {
    [self setSaveUser: saveUser ? false:true];
     [self initUser];
+}
+
+-(UserInfoModel*)userInfo
+{
+    if (!_userInfo) {
+        _userInfo = [UserInfoModel getInstance];
+    }
+    return _userInfo;
 }
 
 /*

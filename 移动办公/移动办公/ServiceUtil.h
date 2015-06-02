@@ -12,44 +12,24 @@
 #import "DESUtil.h"
 #import "BaseModel.h"
 
-typedef void(^RequestSuccess)(AFHTTPRequestOperation*, id);
-
 @interface ServiceUtil : NSObject
 
 #pragma mark - 参数
-@property (nonatomic,strong,readonly) NSString* http;
+@property (nonatomic,strong,readonly) NSMutableString* http;
+
+#pragma mark 请求方式
+@property(nonatomic,strong)NSString* httpMethod;
 @property (nonatomic,strong,readonly) NSMutableURLRequest* request;
 @property (nonatomic,strong,readonly) AFHTTPRequestOperation* afHttp;
 
-@property (nonatomic)__block NSError* err;
+-(instancetype)initWithService;
 
-#pragma mark 是否报错
-@property (nonatomic,readonly,getter=isError) BOOL error;
-
-#pragma mark 错误编码
-@property (nonatomic,readonly)NSString* errorCode;
-
-#pragma mark 错误信息
-@property (nonatomic,readonly) NSString* errorMessage;
-
-#pragma mark 返回json字符串
-@property (nonatomic,readonly) NSString* json;
-
-#pragma mark 返回结果的block代码块
-@property(nonatomic,copy) RequestSuccess requestReturn;
-
-@property(nonatomic)__block NSDictionary* dictionary;
-
-@property(nonatomic,readonly) NSString* httpMethod;
++(instancetype)getInstance;
 
 #pragma mark - 公共方法
-#pragma mark 查询信息
--(NSDictionary*)queryService:(NSString*)serviceMethod;
-#pragma mark 修改信息
--(BOOL)updateService;
 
-#pragma mark 下载文件
--(NSString*)downLoadFile;
+#pragma mark 查询信息
+-(void)queryService:(BaseModel*)baseModel;
 
 
 @end

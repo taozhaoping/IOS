@@ -20,7 +20,12 @@
 #pragma mark 当前对象转换成字典
 -(NSDictionary*)DictionaryForBean;
 
+#pragma mark 字典转换成当前对象
+-(void)beanForDictionary:(NSDictionary *)dict;
+
 #pragma mark 当前对象转换成JSON字符串
 -(NSString*)JsonForDictionary;
+
+-(NSDictionary*)dictionaryForSearchBean;
 
 @end
